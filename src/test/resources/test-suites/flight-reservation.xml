@@ -5,25 +5,25 @@
         <!--        <parameter name="expectedPrice" value="$584 USD" />-->
         <parameter name="testDataPath" value="test-data/flight-reservation/passenger-1.json" />
         <classes>
-            <class name="org.example.pages.flightreservation.FlightReservationTest"/>
+            <class name="org.example.tests.flightreservation.FlightReservationTest"/>
         </classes>
     </test>
     <test name="passengers-count-2">
         <parameter name="testDataPath" value="test-data/flight-reservation/passenger-2.json" />
         <classes>
-            <class name="org.example.pages.flightreservation.FlightReservationTest"/>
+            <class name="org.example.tests.flightreservation.FlightReservationTest"/>
         </classes>
     </test>
     <test name="passengers-count-3">
         <parameter name="testDataPath" value="test-data/flight-reservation/passenger-3.json" />
         <classes>
-            <class name="org.example.pages.flightreservation.FlightReservationTest"/>
+            <class name="org.example.tests.flightreservation.FlightReservationTest"/>
         </classes>
     </test>
     <test name="passengers-count-4">
         <parameter name="testDataPath" value="test-data/flight-reservation/passenger-4.json" />
         <classes>
-            <class name="org.example.pages.flightreservation.FlightReservationTest"/>
+            <class name="org.example.tests.flightreservation.FlightReservationTest"/>
         </classes>
     </test>
 </suite>

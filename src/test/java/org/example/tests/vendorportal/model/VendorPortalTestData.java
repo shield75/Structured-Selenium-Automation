@@ -1,4 +1,4 @@
-package org.example.pages.vendorportal.model;
+package org.example.tests.vendorportal.model;
 
 public record VendorPortalTestData(String username,
                                    String password,

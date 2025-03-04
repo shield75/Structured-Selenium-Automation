@@ -1,4 +1,4 @@
-package org.example.pages;
+package org.example.tests;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;

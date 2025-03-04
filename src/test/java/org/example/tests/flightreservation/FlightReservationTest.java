@@ -1,7 +1,7 @@
-package org.example.pages.flightreservation;
+package org.example.tests.flightreservation;
 
-import org.example.pages.AbstractTest;
-import org.example.pages.flightreservation.model.FlightReservationTestData;
+import org.example.tests.AbstractTest;
+import org.example.tests.flightreservation.model.FlightReservationTestData;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;

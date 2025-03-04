@@ -1,7 +1,7 @@
-package org.example.pages.vendorportal;
+package org.example.tests.vendorportal;
 
-import org.example.pages.AbstractTest;
-import org.example.pages.vendorportal.model.VendorPortalTestData;
+import org.example.tests.AbstractTest;
+import org.example.tests.vendorportal.model.VendorPortalTestData;
 import org.example.pages.vendorsportal.DashboardPage;
 import org.example.pages.vendorsportal.LoginPage;
 import org.slf4j.Logger;

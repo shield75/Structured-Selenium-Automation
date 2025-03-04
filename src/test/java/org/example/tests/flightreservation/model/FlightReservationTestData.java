@@ -1,4 +1,4 @@
-package org.example.pages.flightreservation.model;
+package org.example.tests.flightreservation.model;
 
 public record FlightReservationTestData(String firstName,
                                         String lastName,
