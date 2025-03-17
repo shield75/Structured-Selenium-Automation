@@ -1,5 +1,6 @@
 package org.example.tests.flightreservation;
 
+import org.example.pages.flightreservation.*;
 import org.example.tests.AbstractTest;
 import org.example.tests.flightreservation.model.FlightReservationTestData;
 import org.testng.Assert;

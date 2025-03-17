@@ -57,8 +57,8 @@ public class RegistrationPage extends AbstractPage {
     public RegistrationPage enterUserDetails(String firstName, String lastName) {
         try {
             waitForElement(firstNameInput);
-            this.firstNameInput.sendKeys(validateInput(firstName, "First Name"));
-            this.lastNameInput.sendKeys(validateInput(lastName, "Last Name"));
+            this.firstNameInput.sendKeys(firstName);
+            this.lastNameInput.sendKeys(lastName);
             return this;
         } catch (Exception e) {
             throw new RuntimeException("Failed to enter user details", e);
@@ -68,8 +68,8 @@ public class RegistrationPage extends AbstractPage {
     public RegistrationPage enterUserCredentials(String email, String password) {
         try {
             waitForElement(emailInput);
-            this.emailInput.sendKeys(validateEmail(email));
-            this.passwordInput.sendKeys(validatePassword(password));
+            this.emailInput.sendKeys(email);
+            this.passwordInput.sendKeys(password);
             return this;
         } catch (Exception e) {
             throw new RuntimeException("Failed to enter user credentials", e);
@@ -79,9 +79,9 @@ public class RegistrationPage extends AbstractPage {
     public RegistrationPage enterAddress(String street, String city, String zip) {
         try {
             waitForElement(streetInput);
-            this.streetInput.sendKeys(validateInput(street, "Street"));
-            this.cityInput.sendKeys(validateInput(city, "City"));
-            this.zipInput.sendKeys(validateInput(zip, "ZIP"));
+            this.streetInput.sendKeys(street);
+            this.cityInput.sendKeys(city);
+            this.zipInput.sendKeys(zip);
             return this;
         } catch (Exception e) {
             throw new RuntimeException("Failed to enter address", e);
@@ -101,24 +101,4 @@ public class RegistrationPage extends AbstractPage {
         this.wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
-    private String validateInput(String input, String fieldName) {
-        if (input == null || input.trim().isEmpty()) {
-            throw new IllegalArgumentException(fieldName + " cannot be empty");
-        }
-        return input.trim();
-    }
-
-    private String validateEmail(String email) {
-        if (email == null || !email.matches("^[A-Za-z0-9+_.-]+@(.+)$")) {
-            throw new IllegalArgumentException("Invalid email format");
-        }
-        return email.trim();
-    }
-
-    private String validatePassword(String password) {
-        if (password == null || password.length() < 8) {
-            throw new IllegalArgumentException("Password must be at least 8 characters long");
-        }
-        return password;
-    }
 }
