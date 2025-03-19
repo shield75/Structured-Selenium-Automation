@@ -9,13 +9,14 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import util.Config;
+import util.Constants;
 import util.JsonUtil;
 
 public class FlightReservationTest extends AbstractTest {
 
     private static final Logger log = LoggerFactory.getLogger(FlightReservationTest.class);
     private FlightReservationTestData testData;
-    private static final String BASE_URL = "https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/reservation-app/index.html";
 
     @BeforeTest
     @Parameters("testDataPath")
@@ -28,7 +29,7 @@ public class FlightReservationTest extends AbstractTest {
     public void userRegistrationTest() {
         log.info("Starting user registration test");
         RegistrationPage registrationPage = new RegistrationPage(driver);
-        registrationPage.goTo(BASE_URL);
+        registrationPage.goTo(Config.get(Constants.FLIGHT_RESERVATION_URL));
         Assert.assertTrue(registrationPage.isAt(), "Registration page is not displayed");
 
         registrationPage

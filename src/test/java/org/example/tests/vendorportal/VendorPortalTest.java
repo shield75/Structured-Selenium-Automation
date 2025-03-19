@@ -10,12 +10,13 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+import util.Config;
+import util.Constants;
 import util.JsonUtil;
 
 public class VendorPortalTest extends AbstractTest {
 
     private static final Logger log = LoggerFactory.getLogger(VendorPortalTest.class);
-    private static final String VENDOR_PORTAL_URL = "https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html";
     
     private LoginPage loginPage;
     private DashboardPage dashboardPage;
@@ -33,7 +34,7 @@ public class VendorPortalTest extends AbstractTest {
     @Test(description = "Verify vendor login functionality")
     public void loginTest() {
         log.info("Starting vendor login test");
-        loginPage.goTo(VENDOR_PORTAL_URL);
+        loginPage.goTo(Config.get(Constants.VENDOR_PORTAL_URL));
         Assert.assertTrue(loginPage.isAt(), "Login page is not displayed");
         loginPage.login(testData.username(), testData.password());
         log.info("Login test completed successfully");

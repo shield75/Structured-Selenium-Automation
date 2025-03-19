@@ -1,0 +1,76 @@
+2025-03-05 00:35:15.629 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  F:\SQA\Flight Reservation\Structured Selenium Automation\src\test\resources\test-suites\flight-reservation.xml
+
+2025-03-05 00:35:16.637 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 133.0.6943.141 (resolved driver for Chrome 133)
+2025-03-05 00:35:16.843 [main] INFO  i.g.bonigarcia.wdm.online.Downloader - Downloading https://storage.googleapis.com/chrome-for-testing-public/133.0.6943.141/win64/chromedriver-win64.zip
+2025-03-05 00:35:21.448 [main] INFO  i.g.bonigarcia.wdm.online.Downloader - Extracting driver from compressed file chromedriver-win64.zip
+2025-03-05 00:35:21.751 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\USER\.cache\selenium\chromedriver\win64\133.0.6943.141\chromedriver.exe
+2025-03-05 00:35:22.675 [main] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-1.json
+2025-03-05 00:35:22.785 [main] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-1.json
+2025-03-05 00:35:22.850 [main] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-05 00:35:24.029 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 133.0.6943.141 (resolved driver for Chrome 133)
+2025-03-05 00:35:24.073 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\USER\.cache\selenium\chromedriver\win64\133.0.6943.141\chromedriver.exe
+2025-03-05 00:35:24.732 [main] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-2.json
+2025-03-05 00:35:24.732 [main] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-2.json
+2025-03-05 00:35:24.746 [main] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-05 00:35:25.753 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 133.0.6943.141 (resolved driver for Chrome 133)
+2025-03-05 00:35:25.791 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\USER\.cache\selenium\chromedriver\win64\133.0.6943.141\chromedriver.exe
+2025-03-05 00:35:26.344 [main] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-3.json
+2025-03-05 00:35:26.344 [main] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-3.json
+2025-03-05 00:35:26.348 [main] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-05 00:35:27.406 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 133.0.6943.141 (resolved driver for Chrome 133)
+2025-03-05 00:35:27.436 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\USER\.cache\selenium\chromedriver\win64\133.0.6943.141\chromedriver.exe
+2025-03-05 00:35:27.984 [main] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-4.json
+2025-03-05 00:35:27.984 [main] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-4.json
+2025-03-05 00:35:27.994 [main] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-05 00:38:48.960 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  F:\SQA\Flight Reservation\Structured Selenium Automation\src\test\resources\test-suites\flight-reservation.xml
+
+2025-03-05 00:38:49.232 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 133.0.6943.141 (resolved driver for Chrome 133)
+2025-03-05 00:38:49.292 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\USER\.cache\selenium\chromedriver\win64\133.0.6943.141\chromedriver.exe
+2025-03-05 00:38:50.119 [main] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-1.json
+2025-03-05 00:38:50.222 [main] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-1.json
+2025-03-05 00:38:50.275 [main] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-05 00:38:51.469 [main] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-05 00:38:51.472 [main] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-05 00:38:53.585 [main] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 1 passengers
+2025-03-05 00:38:55.761 [main] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-05 00:38:58.122 [main] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-05 00:39:00.182 [main] INFO  o.e.p.f.FlightConfirmationPage - Total price : $584 USD
+2025-03-05 00:39:00.182 [main] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $584 USD
+2025-03-05 00:39:00.331 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 133.0.6943.141 (resolved driver for Chrome 133)
+2025-03-05 00:39:00.379 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\USER\.cache\selenium\chromedriver\win64\133.0.6943.141\chromedriver.exe
+2025-03-05 00:39:00.919 [main] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-2.json
+2025-03-05 00:39:00.919 [main] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-2.json
+2025-03-05 00:39:00.921 [main] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-05 00:39:02.123 [main] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-05 00:39:02.125 [main] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-05 00:39:04.230 [main] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 2 passengers
+2025-03-05 00:39:06.426 [main] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-05 00:39:08.732 [main] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-05 00:39:10.783 [main] INFO  o.e.p.f.FlightConfirmationPage - Total price : $1169 USD
+2025-03-05 00:39:10.783 [main] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $1169 USD
+2025-03-05 00:39:10.929 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 133.0.6943.141 (resolved driver for Chrome 133)
+2025-03-05 00:39:10.976 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\USER\.cache\selenium\chromedriver\win64\133.0.6943.141\chromedriver.exe
+2025-03-05 00:39:11.533 [main] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-3.json
+2025-03-05 00:39:11.533 [main] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-3.json
+2025-03-05 00:39:11.534 [main] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-05 00:39:12.707 [main] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-05 00:39:12.708 [main] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-05 00:39:14.820 [main] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 3 passengers
+2025-03-05 00:39:16.999 [main] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-05 00:39:19.313 [main] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-05 00:39:21.366 [main] INFO  o.e.p.f.FlightConfirmationPage - Total price : $1753 USD
+2025-03-05 00:39:21.366 [main] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $1753 USD
+2025-03-05 00:39:21.515 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 133.0.6943.141 (resolved driver for Chrome 133)
+2025-03-05 00:39:21.562 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\USER\.cache\selenium\chromedriver\win64\133.0.6943.141\chromedriver.exe
+2025-03-05 00:39:22.122 [main] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-4.json
+2025-03-05 00:39:22.122 [main] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-4.json
+2025-03-05 00:39:22.124 [main] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-05 00:39:23.307 [main] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-05 00:39:23.308 [main] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-05 00:39:25.416 [main] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 4 passengers
+2025-03-05 00:39:27.593 [main] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-05 00:39:29.887 [main] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-05 00:39:31.939 [main] INFO  o.e.p.f.FlightConfirmationPage - Total price : $2338 USD
+2025-03-05 00:39:31.939 [main] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $2338 USD
