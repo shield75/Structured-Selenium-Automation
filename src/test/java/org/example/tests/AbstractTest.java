@@ -3,6 +3,7 @@ package org.example.tests;
 
 import com.google.common.util.concurrent.Uninterruptibles;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import listener.TestListener;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -20,6 +21,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
 
+@Listeners(TestListener.class)
 public abstract class AbstractTest {
 
     private static final Logger log = LoggerFactory.getLogger(AbstractTest.class);
@@ -35,6 +37,7 @@ public abstract class AbstractTest {
     public void setDriver(ITestContext ctx) throws MalformedURLException {
         this.driver = Boolean.parseBoolean(Config.get(Constants.GRID_ENABLED)) ? getRemoteDriver() : getLocalDriver();
         this.driver.manage().window().maximize();
+        ctx.setAttribute(Constants.DRIVER, this.driver);
     }
 
     private WebDriver getRemoteDriver() throws MalformedURLException {
