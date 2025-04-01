@@ -49,11 +49,13 @@ public abstract class AbstractTest {
         String hubHost = Config.get(Constants.GRID_HUB_HOST);
         String url = String.format(urlFormat, hubHost);
         log.info("grid url: {}", url);
+        log.info("Returning Remote Driver");
         return new RemoteWebDriver(new URL(url), capabilities);
     }
 
     private WebDriver getLocalDriver() {
         WebDriverManager.chromedriver().setup();
+        log.info("Returning Local Driver");
         return new ChromeDriver();
     }
 
