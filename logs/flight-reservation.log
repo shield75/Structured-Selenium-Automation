@@ -1315,3 +1315,308 @@ java.lang.NullPointerException: null
 2025-03-20 03:41:00.788 [TestNG-tests-2] INFO  o.e.p.f.FlightConfirmationPage - Total price : $1169 USD
 2025-03-20 03:41:00.788 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $2338 USD
 2025-03-20 03:41:00.788 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $1169 USD
+2025-03-22 02:44:45.269 [main] INFO  util.ResourceLoader - reading resource from location: src/test/resources/test-data/config/default.properties
+2025-03-22 02:44:45.272 [main] INFO  util.Config - Test Properties
+2025-03-22 02:44:45.272 [main] INFO  util.Config - -----------------
+2025-03-22 02:44:45.272 [main] INFO  util.Config - selenium.grid.urlFormat=http://%s:4444/wd/hub
+2025-03-22 02:44:45.272 [main] INFO  util.Config - browser=chrome
+2025-03-22 02:44:45.273 [main] INFO  util.Config - vendorPortal.url=https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html
+2025-03-22 02:44:45.273 [main] INFO  util.Config - selenium.grid.enabled=true
+2025-03-22 02:44:45.273 [main] INFO  util.Config - flightReservation.url=https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/reservation-app/index.html
+2025-03-22 02:44:45.273 [main] INFO  util.Config - selenium.grid.hubHost=localhost
+2025-03-22 02:44:45.273 [main] INFO  util.Config - -----------------
+2025-03-22 02:44:45.291 [TestNG-tests-3] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-22 02:44:45.291 [TestNG-tests-2] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-22 02:44:45.291 [TestNG-tests-1] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-22 02:44:47.835 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Initializing test with data from: test-data/vendor-portal/john.json
+2025-03-22 02:44:47.835 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Initializing test with data from: test-data/vendor-portal/sam.json
+2025-03-22 02:44:47.835 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Initializing test with data from: test-data/vendor-portal/mike.json
+2025-03-22 02:44:47.993 [TestNG-tests-3] INFO  util.ResourceLoader - reading resource from location: test-data/vendor-portal/john.json
+2025-03-22 02:44:47.993 [TestNG-tests-2] INFO  util.ResourceLoader - reading resource from location: test-data/vendor-portal/mike.json
+2025-03-22 02:44:47.993 [TestNG-tests-1] INFO  util.ResourceLoader - reading resource from location: test-data/vendor-portal/sam.json
+2025-03-22 02:44:48.068 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Starting vendor login test
+2025-03-22 02:44:48.068 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Starting vendor login test
+2025-03-22 02:44:48.068 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Starting vendor login test
+2025-03-22 02:44:48.068 [TestNG-tests-3] INFO  o.e.pages.vendorsportal.LoginPage - Navigating to: https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html
+2025-03-22 02:44:48.068 [TestNG-tests-2] INFO  o.e.pages.vendorsportal.LoginPage - Navigating to: https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html
+2025-03-22 02:44:48.068 [TestNG-tests-1] INFO  o.e.pages.vendorsportal.LoginPage - Navigating to: https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html
+2025-03-22 02:44:48.957 [TestNG-tests-2] INFO  o.e.pages.vendorsportal.LoginPage - Attempting login for user: mike
+2025-03-22 02:44:48.957 [TestNG-tests-3] INFO  o.e.pages.vendorsportal.LoginPage - Attempting login for user: john
+2025-03-22 02:44:48.997 [TestNG-tests-1] INFO  o.e.pages.vendorsportal.LoginPage - Attempting login for user: sam
+2025-03-22 02:44:49.408 [TestNG-tests-2] INFO  o.e.pages.vendorsportal.LoginPage - Login attempt completed for user: mike
+2025-03-22 02:44:49.409 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Login test completed successfully
+2025-03-22 02:44:49.418 [TestNG-tests-3] INFO  o.e.pages.vendorsportal.LoginPage - Login attempt completed for user: john
+2025-03-22 02:44:49.418 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Login test completed successfully
+2025-03-22 02:44:49.459 [TestNG-tests-1] INFO  o.e.pages.vendorsportal.LoginPage - Login attempt completed for user: sam
+2025-03-22 02:44:49.459 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Login test completed successfully
+2025-03-22 02:44:54.431 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Starting dashboard verification test
+2025-03-22 02:44:54.431 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Starting dashboard verification test
+2025-03-22 02:44:54.473 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Starting dashboard verification test
+2025-03-22 02:44:54.506 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Verifying financial metrics
+2025-03-22 02:44:54.508 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Verifying financial metrics
+2025-03-22 02:44:54.552 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Verifying financial metrics
+2025-03-22 02:44:54.667 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Testing order history search with keyword: miami
+2025-03-22 02:44:54.667 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Testing order history search with keyword: 2024/01/01
+2025-03-22 02:44:54.667 [TestNG-tests-2] INFO  o.e.p.vendorsportal.DashboardPage - Searching order history with keyword: miami
+2025-03-22 02:44:54.667 [TestNG-tests-3] INFO  o.e.p.vendorsportal.DashboardPage - Searching order history with keyword: 2024/01/01
+2025-03-22 02:44:54.726 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Testing order history search with keyword: adams
+2025-03-22 02:44:54.726 [TestNG-tests-1] INFO  o.e.p.vendorsportal.DashboardPage - Searching order history with keyword: adams
+2025-03-22 02:44:54.863 [TestNG-tests-2] DEBUG o.e.p.vendorsportal.DashboardPage - Raw search results text: Showing 1 to 10 of 10 entries (filtered from 99 total entries)
+2025-03-22 02:44:54.863 [TestNG-tests-2] INFO  o.e.p.vendorsportal.DashboardPage - Search results count: 10
+2025-03-22 02:44:54.864 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Dashboard test completed successfully
+2025-03-22 02:44:54.877 [TestNG-tests-3] DEBUG o.e.p.vendorsportal.DashboardPage - Raw search results text: Showing 0 to 0 of 0 entries (filtered from 99 total entries)
+2025-03-22 02:44:54.878 [TestNG-tests-3] INFO  o.e.p.vendorsportal.DashboardPage - Search results count: 0
+2025-03-22 02:44:54.878 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Dashboard test completed successfully
+2025-03-22 02:44:54.913 [TestNG-tests-1] DEBUG o.e.p.vendorsportal.DashboardPage - Raw search results text: Showing 1 to 8 of 8 entries (filtered from 99 total entries)
+2025-03-22 02:44:54.914 [TestNG-tests-1] INFO  o.e.p.vendorsportal.DashboardPage - Search results count: 8
+2025-03-22 02:44:54.914 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Dashboard test completed successfully
+2025-03-22 02:44:59.872 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Starting logout test
+2025-03-22 02:44:59.872 [TestNG-tests-2] INFO  o.e.p.vendorsportal.DashboardPage - Initiating logout process
+2025-03-22 02:44:59.887 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Starting logout test
+2025-03-22 02:44:59.887 [TestNG-tests-3] INFO  o.e.p.vendorsportal.DashboardPage - Initiating logout process
+2025-03-22 02:44:59.919 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Starting logout test
+2025-03-22 02:44:59.919 [TestNG-tests-1] INFO  o.e.p.vendorsportal.DashboardPage - Initiating logout process
+2025-03-22 02:45:04.324 [TestNG-tests-2] INFO  o.e.p.vendorsportal.DashboardPage - Logout completed successfully
+2025-03-22 02:45:04.404 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Logout test completed successfully
+2025-03-22 02:45:12.520 [TestNG-tests-1] INFO  o.e.p.vendorsportal.DashboardPage - Logout completed successfully
+2025-03-22 02:45:12.592 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Logout test completed successfully
+2025-03-22 02:45:20.631 [TestNG-tests-3] INFO  o.e.p.vendorsportal.DashboardPage - Logout completed successfully
+2025-03-22 02:45:20.712 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Logout test completed successfully
+2025-03-22 02:45:25.811 [main] INFO  util.ResourceLoader - reading resource from location: src/test/resources/test-data/config/default.properties
+2025-03-22 02:45:25.813 [main] INFO  util.Config - Test Properties
+2025-03-22 02:45:25.813 [main] INFO  util.Config - -----------------
+2025-03-22 02:45:25.813 [main] INFO  util.Config - selenium.grid.urlFormat=http://%s:4444/wd/hub
+2025-03-22 02:45:25.813 [main] INFO  util.Config - browser=chrome
+2025-03-22 02:45:25.813 [main] INFO  util.Config - vendorPortal.url=https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html
+2025-03-22 02:45:25.813 [main] INFO  util.Config - selenium.grid.enabled=true
+2025-03-22 02:45:25.813 [main] INFO  util.Config - flightReservation.url=https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/reservation-app/index.html
+2025-03-22 02:45:25.813 [main] INFO  util.Config - selenium.grid.hubHost=localhost
+2025-03-22 02:45:25.813 [main] INFO  util.Config - -----------------
+2025-03-22 02:45:25.814 [TestNG-tests-1] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-22 02:45:25.814 [TestNG-tests-3] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-22 02:45:25.814 [TestNG-tests-2] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-22 02:45:25.814 [TestNG-tests-4] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-22 02:45:26.482 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-4.json
+2025-03-22 02:45:26.484 [TestNG-tests-4] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-4.json
+2025-03-22 02:45:26.504 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-1.json
+2025-03-22 02:45:26.504 [TestNG-tests-1] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-1.json
+2025-03-22 02:45:26.506 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-22 02:45:26.506 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-3.json
+2025-03-22 02:45:26.507 [TestNG-tests-3] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-3.json
+2025-03-22 02:45:26.520 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-22 02:45:26.520 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-22 02:45:26.537 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-2.json
+2025-03-22 02:45:26.538 [TestNG-tests-2] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-2.json
+2025-03-22 02:45:26.558 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-22 02:45:30.024 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-22 02:45:30.060 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-22 02:45:30.311 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-22 02:45:30.322 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-22 02:45:35.031 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-22 02:45:35.063 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-22 02:45:35.327 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-22 02:45:35.327 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-22 02:45:40.215 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 1 passengers
+2025-03-22 02:45:40.262 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 4 passengers
+2025-03-22 02:45:40.524 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 2 passengers
+2025-03-22 02:45:40.524 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 3 passengers
+2025-03-22 02:45:45.637 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-22 02:45:45.729 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-22 02:45:45.961 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-22 02:45:45.976 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-22 02:45:51.438 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-22 02:45:51.521 [TestNG-tests-1] INFO  o.e.p.f.FlightConfirmationPage - Total price : $584 USD
+2025-03-22 02:45:51.521 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $584 USD
+2025-03-22 02:45:51.530 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-22 02:45:51.613 [TestNG-tests-4] INFO  o.e.p.f.FlightConfirmationPage - Total price : $2338 USD
+2025-03-22 02:45:51.614 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $2338 USD
+2025-03-22 02:45:51.764 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-22 02:45:51.779 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-22 02:45:51.851 [TestNG-tests-3] INFO  o.e.p.f.FlightConfirmationPage - Total price : $1753 USD
+2025-03-22 02:45:51.851 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $1753 USD
+2025-03-22 02:45:51.868 [TestNG-tests-2] INFO  o.e.p.f.FlightConfirmationPage - Total price : $1169 USD
+2025-03-22 02:45:51.868 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $1169 USD
+2025-03-22 02:55:50.241 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  F:\SQA\Flight Reservation\Structured Selenium Automation\src\test\resources\test-suites\flight-reservation.xml
+
+2025-03-22 02:55:50.272 [main] INFO  util.ResourceLoader - reading resource from location: ./test-data/config/default.properties
+2025-03-22 02:55:50.274 [main] INFO  util.Config - Test Properties
+2025-03-22 02:55:50.274 [main] INFO  util.Config - -----------------
+2025-03-22 02:55:50.274 [main] INFO  util.Config - selenium.grid.urlFormat=http://%s:4444/wd/hub
+2025-03-22 02:55:50.274 [main] INFO  util.Config - browser=chrome
+2025-03-22 02:55:50.274 [main] INFO  util.Config - vendorPortal.url=https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html
+2025-03-22 02:55:50.274 [main] INFO  util.Config - selenium.grid.enabled=true
+2025-03-22 02:55:50.274 [main] INFO  util.Config - flightReservation.url=https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/reservation-app/index.html
+2025-03-22 02:55:50.274 [main] INFO  util.Config - selenium.grid.hubHost=localhost
+2025-03-22 02:55:50.274 [main] INFO  util.Config - -----------------
+2025-03-22 02:55:50.297 [TestNG-tests-4] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-22 02:55:50.297 [TestNG-tests-2] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-22 02:55:50.297 [TestNG-tests-3] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-22 02:55:50.297 [TestNG-tests-1] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-22 02:55:52.644 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-4.json
+2025-03-22 02:55:52.644 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-2.json
+2025-03-22 02:55:52.644 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-1.json
+2025-03-22 02:55:52.645 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-3.json
+2025-03-22 02:55:52.826 [TestNG-tests-2] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-2.json
+2025-03-22 02:55:52.826 [TestNG-tests-4] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-4.json
+2025-03-22 02:55:52.826 [TestNG-tests-1] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-1.json
+2025-03-22 02:55:52.826 [TestNG-tests-3] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-3.json
+2025-03-22 02:55:52.897 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-22 02:55:52.897 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-22 02:55:52.897 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-22 02:55:52.897 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-22 02:55:55.746 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-22 02:55:55.842 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-22 02:55:55.889 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-22 02:55:56.003 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-22 02:56:00.762 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-22 02:56:00.852 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-22 02:56:00.897 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-22 02:56:01.005 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-22 02:56:05.957 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 4 passengers
+2025-03-22 02:56:06.064 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 1 passengers
+2025-03-22 02:56:06.109 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 2 passengers
+2025-03-22 02:56:06.201 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 3 passengers
+2025-03-22 02:56:11.434 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-22 02:56:11.527 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-22 02:56:11.603 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-22 02:56:11.663 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-22 02:56:17.275 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-22 02:56:17.367 [TestNG-tests-4] INFO  o.e.p.f.FlightConfirmationPage - Total price : $2338 USD
+2025-03-22 02:56:17.367 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $2338 USD
+2025-03-22 02:56:17.383 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-22 02:56:17.446 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-22 02:56:17.477 [TestNG-tests-1] INFO  o.e.p.f.FlightConfirmationPage - Total price : $584 USD
+2025-03-22 02:56:17.477 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $584 USD
+2025-03-22 02:56:17.523 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-22 02:56:17.545 [TestNG-tests-2] INFO  o.e.p.f.FlightConfirmationPage - Total price : $1169 USD
+2025-03-22 02:56:17.545 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $1169 USD
+2025-03-22 02:56:17.621 [TestNG-tests-3] INFO  o.e.p.f.FlightConfirmationPage - Total price : $1753 USD
+2025-03-22 02:56:17.621 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $1753 USD
+2025-03-22 03:10:02.251 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  F:\SQA\Flight Reservation\Structured Selenium Automation\src\test\resources\test-suites\flight-reservation.xml
+
+2025-03-22 03:10:02.270 [main] INFO  util.ResourceLoader - reading resource from location: ./test-data/config/default.properties
+2025-03-22 03:10:02.272 [main] INFO  util.Config - Test Properties
+2025-03-22 03:10:02.272 [main] INFO  util.Config - -----------------
+2025-03-22 03:10:02.272 [main] INFO  util.Config - selenium.grid.urlFormat=http://%s:4444/wd/hub
+2025-03-22 03:10:02.273 [main] INFO  util.Config - browser=chrome
+2025-03-22 03:10:02.273 [main] INFO  util.Config - vendorPortal.url=https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html
+2025-03-22 03:10:02.273 [main] INFO  util.Config - selenium.grid.enabled=true
+2025-03-22 03:10:02.273 [main] INFO  util.Config - flightReservation.url=https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/reservation-app/index.html
+2025-03-22 03:10:02.273 [main] INFO  util.Config - selenium.grid.hubHost=localhost
+2025-03-22 03:10:02.273 [main] INFO  util.Config - -----------------
+2025-03-22 03:10:02.290 [TestNG-tests-1] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-22 03:10:02.290 [TestNG-tests-2] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-22 03:10:02.290 [TestNG-tests-4] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-22 03:10:02.290 [TestNG-tests-3] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-22 03:10:04.631 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-2.json
+2025-03-22 03:10:04.631 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-4.json
+2025-03-22 03:10:04.631 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-3.json
+2025-03-22 03:10:04.632 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-1.json
+2025-03-22 03:10:04.809 [TestNG-tests-4] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-4.json
+2025-03-22 03:10:04.809 [TestNG-tests-3] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-3.json
+2025-03-22 03:10:04.809 [TestNG-tests-1] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-1.json
+2025-03-22 03:10:04.809 [TestNG-tests-2] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-2.json
+2025-03-22 03:10:04.881 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-22 03:10:04.881 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-22 03:10:04.881 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-22 03:10:04.881 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-22 03:10:07.255 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-22 03:10:07.255 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-22 03:10:07.257 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-22 03:10:07.463 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-22 03:10:12.269 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-22 03:10:12.269 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-22 03:10:12.269 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-22 03:10:12.467 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-22 03:10:17.462 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 4 passengers
+2025-03-22 03:10:17.462 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 2 passengers
+2025-03-22 03:10:17.478 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 3 passengers
+2025-03-22 03:10:17.650 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 1 passengers
+2025-03-22 03:10:22.953 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-22 03:10:22.953 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-22 03:10:22.984 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-22 03:10:23.106 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-22 03:10:28.836 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-22 03:10:28.851 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-22 03:10:28.882 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-22 03:10:28.923 [TestNG-tests-2] INFO  o.e.p.f.FlightConfirmationPage - Total price : $1169 USD
+2025-03-22 03:10:28.923 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $1169 USD
+2025-03-22 03:10:28.941 [TestNG-tests-4] INFO  o.e.p.f.FlightConfirmationPage - Total price : $2338 USD
+2025-03-22 03:10:28.941 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $2338 USD
+2025-03-22 03:10:28.959 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-22 03:10:28.966 [TestNG-tests-3] INFO  o.e.p.f.FlightConfirmationPage - Total price : $1753 USD
+2025-03-22 03:10:28.966 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $1753 USD
+2025-03-22 03:10:29.048 [TestNG-tests-1] INFO  o.e.p.f.FlightConfirmationPage - Total price : $584 USD
+2025-03-22 03:10:29.049 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $584 USD
+2025-03-22 03:11:19.992 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  F:\SQA\Flight Reservation\Structured Selenium Automation\src\test\resources\test-suites\vendor-portal.xml
+
+2025-03-22 03:11:20.011 [main] INFO  util.ResourceLoader - reading resource from location: ./test-data/config/default.properties
+2025-03-22 03:11:20.013 [main] INFO  util.Config - Test Properties
+2025-03-22 03:11:20.013 [main] INFO  util.Config - -----------------
+2025-03-22 03:11:20.013 [main] INFO  util.Config - selenium.grid.urlFormat=http://%s:4444/wd/hub
+2025-03-22 03:11:20.013 [main] INFO  util.Config - browser=chrome
+2025-03-22 03:11:20.013 [main] INFO  util.Config - vendorPortal.url=https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html
+2025-03-22 03:11:20.013 [main] INFO  util.Config - selenium.grid.enabled=true
+2025-03-22 03:11:20.013 [main] INFO  util.Config - flightReservation.url=https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/reservation-app/index.html
+2025-03-22 03:11:20.013 [main] INFO  util.Config - selenium.grid.hubHost=localhost
+2025-03-22 03:11:20.013 [main] INFO  util.Config - -----------------
+2025-03-22 03:11:20.046 [TestNG-tests-1] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-22 03:11:20.046 [TestNG-tests-3] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-22 03:11:20.046 [TestNG-tests-2] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-22 03:11:22.267 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Initializing test with data from: test-data/vendor-portal/john.json
+2025-03-22 03:11:22.267 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Initializing test with data from: test-data/vendor-portal/sam.json
+2025-03-22 03:11:22.268 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Initializing test with data from: test-data/vendor-portal/mike.json
+2025-03-22 03:11:22.400 [TestNG-tests-1] INFO  util.ResourceLoader - reading resource from location: test-data/vendor-portal/sam.json
+2025-03-22 03:11:22.400 [TestNG-tests-3] INFO  util.ResourceLoader - reading resource from location: test-data/vendor-portal/john.json
+2025-03-22 03:11:22.400 [TestNG-tests-2] INFO  util.ResourceLoader - reading resource from location: test-data/vendor-portal/mike.json
+2025-03-22 03:11:22.466 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Starting vendor login test
+2025-03-22 03:11:22.466 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Starting vendor login test
+2025-03-22 03:11:22.466 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Starting vendor login test
+2025-03-22 03:11:22.466 [TestNG-tests-1] INFO  o.e.pages.vendorsportal.LoginPage - Navigating to: https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html
+2025-03-22 03:11:22.466 [TestNG-tests-2] INFO  o.e.pages.vendorsportal.LoginPage - Navigating to: https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html
+2025-03-22 03:11:22.466 [TestNG-tests-3] INFO  o.e.pages.vendorsportal.LoginPage - Navigating to: https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html
+2025-03-22 03:11:23.241 [TestNG-tests-1] INFO  o.e.pages.vendorsportal.LoginPage - Attempting login for user: sam
+2025-03-22 03:11:23.284 [TestNG-tests-3] INFO  o.e.pages.vendorsportal.LoginPage - Attempting login for user: john
+2025-03-22 03:11:23.387 [TestNG-tests-2] INFO  o.e.pages.vendorsportal.LoginPage - Attempting login for user: mike
+2025-03-22 03:11:23.658 [TestNG-tests-1] INFO  o.e.pages.vendorsportal.LoginPage - Login attempt completed for user: sam
+2025-03-22 03:11:23.658 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Login test completed successfully
+2025-03-22 03:11:23.705 [TestNG-tests-3] INFO  o.e.pages.vendorsportal.LoginPage - Login attempt completed for user: john
+2025-03-22 03:11:23.705 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Login test completed successfully
+2025-03-22 03:11:23.780 [TestNG-tests-2] INFO  o.e.pages.vendorsportal.LoginPage - Login attempt completed for user: mike
+2025-03-22 03:11:23.780 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Login test completed successfully
+2025-03-22 03:11:28.675 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Starting dashboard verification test
+2025-03-22 03:11:28.719 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Starting dashboard verification test
+2025-03-22 03:11:28.731 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Verifying financial metrics
+2025-03-22 03:11:28.774 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Verifying financial metrics
+2025-03-22 03:11:28.796 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Starting dashboard verification test
+2025-03-22 03:11:28.850 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Testing order history search with keyword: adams
+2025-03-22 03:11:28.850 [TestNG-tests-1] INFO  o.e.p.vendorsportal.DashboardPage - Searching order history with keyword: adams
+2025-03-22 03:11:28.852 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Verifying financial metrics
+2025-03-22 03:11:28.898 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Testing order history search with keyword: 2024/01/01
+2025-03-22 03:11:28.898 [TestNG-tests-3] INFO  o.e.p.vendorsportal.DashboardPage - Searching order history with keyword: 2024/01/01
+2025-03-22 03:11:28.975 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Testing order history search with keyword: miami
+2025-03-22 03:11:28.976 [TestNG-tests-2] INFO  o.e.p.vendorsportal.DashboardPage - Searching order history with keyword: miami
+2025-03-22 03:11:29.022 [TestNG-tests-1] DEBUG o.e.p.vendorsportal.DashboardPage - Raw search results text: Showing 1 to 8 of 8 entries (filtered from 99 total entries)
+2025-03-22 03:11:29.023 [TestNG-tests-1] INFO  o.e.p.vendorsportal.DashboardPage - Search results count: 8
+2025-03-22 03:11:29.023 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Dashboard test completed successfully
+2025-03-22 03:11:29.079 [TestNG-tests-3] DEBUG o.e.p.vendorsportal.DashboardPage - Raw search results text: Showing 0 to 0 of 0 entries (filtered from 99 total entries)
+2025-03-22 03:11:29.079 [TestNG-tests-3] INFO  o.e.p.vendorsportal.DashboardPage - Search results count: 0
+2025-03-22 03:11:29.079 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Dashboard test completed successfully
+2025-03-22 03:11:29.137 [TestNG-tests-2] DEBUG o.e.p.vendorsportal.DashboardPage - Raw search results text: Showing 1 to 10 of 10 entries (filtered from 99 total entries)
+2025-03-22 03:11:29.137 [TestNG-tests-2] INFO  o.e.p.vendorsportal.DashboardPage - Search results count: 10
+2025-03-22 03:11:29.137 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Dashboard test completed successfully
+2025-03-22 03:11:34.035 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Starting logout test
+2025-03-22 03:11:34.035 [TestNG-tests-1] INFO  o.e.p.vendorsportal.DashboardPage - Initiating logout process
+2025-03-22 03:11:34.081 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Starting logout test
+2025-03-22 03:11:34.081 [TestNG-tests-3] INFO  o.e.p.vendorsportal.DashboardPage - Initiating logout process
+2025-03-22 03:11:34.142 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Starting logout test
+2025-03-22 03:11:34.142 [TestNG-tests-2] INFO  o.e.p.vendorsportal.DashboardPage - Initiating logout process
+2025-03-22 03:11:38.605 [TestNG-tests-2] INFO  o.e.p.vendorsportal.DashboardPage - Logout completed successfully
+2025-03-22 03:11:38.688 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Logout test completed successfully
+2025-03-22 03:11:46.648 [TestNG-tests-1] INFO  o.e.p.vendorsportal.DashboardPage - Logout completed successfully
+2025-03-22 03:11:46.723 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Logout test completed successfully
+2025-03-22 03:11:54.765 [TestNG-tests-3] INFO  o.e.p.vendorsportal.DashboardPage - Logout completed successfully
+2025-03-22 03:11:54.824 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Logout test completed successfully
