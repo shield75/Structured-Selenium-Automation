@@ -1,0 +1,1622 @@
+2025-03-20 02:59:48.588 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  F:\SQA\Flight Reservation\Structured Selenium Automation\src\test\resources\test-suites\vendor-portal.xml
+
+2025-03-20 02:59:48.620 [main] INFO  util.ResourceLoader - reading resource from location: config/default.properties
+2025-03-20 02:59:48.620 [main] ERROR util.Config - unable to read the property file config/default.properties
+java.nio.file.NoSuchFileException: config\default.properties
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:379)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:431)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:159)
+	at util.ResourceLoader.getResource(ResourceLoader.java:21)
+	at util.Config.loadProperties(Config.java:44)
+	at util.Config.initialize(Config.java:19)
+	at org.example.tests.AbstractTest.setupConfig(AbstractTest.java:32)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+2025-03-20 02:59:48.620 [main] INFO  util.Config - Test Properties
+2025-03-20 02:59:48.620 [main] INFO  util.Config - -----------------
+2025-03-20 02:59:48.620 [main] INFO  util.Config - -----------------
+2025-03-20 02:59:49.771 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 134.0.6998.90 (resolved driver for Chrome 134)
+2025-03-20 02:59:49.992 [main] INFO  i.g.bonigarcia.wdm.online.Downloader - Downloading https://storage.googleapis.com/chrome-for-testing-public/134.0.6998.90/win64/chromedriver-win64.zip
+2025-03-20 02:59:54.153 [main] INFO  i.g.bonigarcia.wdm.online.Downloader - Extracting driver from compressed file chromedriver-win64.zip
+2025-03-20 02:59:54.280 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\USER\.cache\selenium\chromedriver\win64\134.0.6998.90\chromedriver.exe
+2025-03-20 02:59:55.115 [main] INFO  o.e.t.vendorportal.VendorPortalTest - Initializing test with data from: test-data/vendor-portal/sam.json
+2025-03-20 02:59:55.263 [main] INFO  util.ResourceLoader - reading resource from location: test-data/vendor-portal/sam.json
+2025-03-20 02:59:55.337 [main] INFO  o.e.t.vendorportal.VendorPortalTest - Starting vendor login test
+2025-03-20 02:59:55.337 [main] INFO  o.e.pages.vendorsportal.LoginPage - Navigating to: null
+2025-03-20 02:59:55.337 [main] ERROR o.e.pages.vendorsportal.LoginPage - Failed to navigate to: null
+java.lang.NullPointerException: null
+	at java.base/java.util.Objects.requireNonNull(Objects.java:233)
+	at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.java:1112)
+	at java.base/java.util.Map.of(Map.java:1365)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at org.example.pages.vendorsportal.LoginPage.goTo(LoginPage.java:42)
+	at org.example.tests.vendorportal.VendorPortalTest.loginTest(VendorPortalTest.java:37)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+2025-03-20 02:59:55.505 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 134.0.6998.90 (resolved driver for Chrome 134)
+2025-03-20 02:59:55.542 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\USER\.cache\selenium\chromedriver\win64\134.0.6998.90\chromedriver.exe
+2025-03-20 02:59:56.180 [main] INFO  o.e.t.vendorportal.VendorPortalTest - Initializing test with data from: test-data/vendor-portal/mike.json
+2025-03-20 02:59:56.181 [main] INFO  util.ResourceLoader - reading resource from location: test-data/vendor-portal/mike.json
+2025-03-20 02:59:56.190 [main] INFO  o.e.t.vendorportal.VendorPortalTest - Starting vendor login test
+2025-03-20 02:59:56.190 [main] INFO  o.e.pages.vendorsportal.LoginPage - Navigating to: null
+2025-03-20 02:59:56.190 [main] ERROR o.e.pages.vendorsportal.LoginPage - Failed to navigate to: null
+java.lang.NullPointerException: null
+	at java.base/java.util.Objects.requireNonNull(Objects.java:233)
+	at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.java:1112)
+	at java.base/java.util.Map.of(Map.java:1365)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at org.example.pages.vendorsportal.LoginPage.goTo(LoginPage.java:42)
+	at org.example.tests.vendorportal.VendorPortalTest.loginTest(VendorPortalTest.java:37)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+2025-03-20 02:59:56.311 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 134.0.6998.90 (resolved driver for Chrome 134)
+2025-03-20 02:59:56.345 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\USER\.cache\selenium\chromedriver\win64\134.0.6998.90\chromedriver.exe
+2025-03-20 02:59:56.909 [main] INFO  o.e.t.vendorportal.VendorPortalTest - Initializing test with data from: test-data/vendor-portal/john.json
+2025-03-20 02:59:56.910 [main] INFO  util.ResourceLoader - reading resource from location: test-data/vendor-portal/john.json
+2025-03-20 02:59:56.920 [main] INFO  o.e.t.vendorportal.VendorPortalTest - Starting vendor login test
+2025-03-20 02:59:56.920 [main] INFO  o.e.pages.vendorsportal.LoginPage - Navigating to: null
+2025-03-20 02:59:56.920 [main] ERROR o.e.pages.vendorsportal.LoginPage - Failed to navigate to: null
+java.lang.NullPointerException: null
+	at java.base/java.util.Objects.requireNonNull(Objects.java:233)
+	at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.java:1112)
+	at java.base/java.util.Map.of(Map.java:1365)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at org.example.pages.vendorsportal.LoginPage.goTo(LoginPage.java:42)
+	at org.example.tests.vendorportal.VendorPortalTest.loginTest(VendorPortalTest.java:37)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+2025-03-20 03:00:48.173 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  F:\SQA\Flight Reservation\Structured Selenium Automation\src\test\resources\test-suites\vendor-portal.xml
+
+2025-03-20 03:00:48.188 [main] INFO  util.ResourceLoader - reading resource from location: config/default.properties
+2025-03-20 03:00:48.189 [main] ERROR util.Config - unable to read the property file config/default.properties
+java.nio.file.NoSuchFileException: config\default.properties
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:379)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:431)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:159)
+	at util.ResourceLoader.getResource(ResourceLoader.java:21)
+	at util.Config.loadProperties(Config.java:44)
+	at util.Config.initialize(Config.java:19)
+	at org.example.tests.AbstractTest.setupConfig(AbstractTest.java:32)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+2025-03-20 03:00:48.191 [main] INFO  util.Config - Test Properties
+2025-03-20 03:00:48.191 [main] INFO  util.Config - -----------------
+2025-03-20 03:00:48.191 [main] INFO  util.Config - -----------------
+2025-03-20 03:00:48.431 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 134.0.6998.90 (resolved driver for Chrome 134)
+2025-03-20 03:00:48.492 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\USER\.cache\selenium\chromedriver\win64\134.0.6998.90\chromedriver.exe
+2025-03-20 03:00:49.231 [main] INFO  o.e.t.vendorportal.VendorPortalTest - Initializing test with data from: test-data/vendor-portal/sam.json
+2025-03-20 03:00:49.353 [main] INFO  util.ResourceLoader - reading resource from location: test-data/vendor-portal/sam.json
+2025-03-20 03:00:49.412 [main] INFO  o.e.t.vendorportal.VendorPortalTest - Starting vendor login test
+2025-03-20 03:00:49.412 [main] INFO  o.e.pages.vendorsportal.LoginPage - Navigating to: null
+2025-03-20 03:00:49.412 [main] ERROR o.e.pages.vendorsportal.LoginPage - Failed to navigate to: null
+java.lang.NullPointerException: null
+	at java.base/java.util.Objects.requireNonNull(Objects.java:233)
+	at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.java:1112)
+	at java.base/java.util.Map.of(Map.java:1365)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at org.example.pages.vendorsportal.LoginPage.goTo(LoginPage.java:42)
+	at org.example.tests.vendorportal.VendorPortalTest.loginTest(VendorPortalTest.java:37)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+2025-03-20 03:00:49.548 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 134.0.6998.90 (resolved driver for Chrome 134)
+2025-03-20 03:00:49.584 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\USER\.cache\selenium\chromedriver\win64\134.0.6998.90\chromedriver.exe
+2025-03-20 03:00:50.120 [main] INFO  o.e.t.vendorportal.VendorPortalTest - Initializing test with data from: test-data/vendor-portal/mike.json
+2025-03-20 03:00:50.121 [main] INFO  util.ResourceLoader - reading resource from location: test-data/vendor-portal/mike.json
+2025-03-20 03:00:50.123 [main] INFO  o.e.t.vendorportal.VendorPortalTest - Starting vendor login test
+2025-03-20 03:00:50.123 [main] INFO  o.e.pages.vendorsportal.LoginPage - Navigating to: null
+2025-03-20 03:00:50.123 [main] ERROR o.e.pages.vendorsportal.LoginPage - Failed to navigate to: null
+java.lang.NullPointerException: null
+	at java.base/java.util.Objects.requireNonNull(Objects.java:233)
+	at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.java:1112)
+	at java.base/java.util.Map.of(Map.java:1365)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at org.example.pages.vendorsportal.LoginPage.goTo(LoginPage.java:42)
+	at org.example.tests.vendorportal.VendorPortalTest.loginTest(VendorPortalTest.java:37)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+2025-03-20 03:00:50.234 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 134.0.6998.90 (resolved driver for Chrome 134)
+2025-03-20 03:00:50.270 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\USER\.cache\selenium\chromedriver\win64\134.0.6998.90\chromedriver.exe
+2025-03-20 03:00:50.780 [main] INFO  o.e.t.vendorportal.VendorPortalTest - Initializing test with data from: test-data/vendor-portal/john.json
+2025-03-20 03:00:50.780 [main] INFO  util.ResourceLoader - reading resource from location: test-data/vendor-portal/john.json
+2025-03-20 03:00:50.783 [main] INFO  o.e.t.vendorportal.VendorPortalTest - Starting vendor login test
+2025-03-20 03:00:50.783 [main] INFO  o.e.pages.vendorsportal.LoginPage - Navigating to: null
+2025-03-20 03:00:50.783 [main] ERROR o.e.pages.vendorsportal.LoginPage - Failed to navigate to: null
+java.lang.NullPointerException: null
+	at java.base/java.util.Objects.requireNonNull(Objects.java:233)
+	at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.java:1112)
+	at java.base/java.util.Map.of(Map.java:1365)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at org.example.pages.vendorsportal.LoginPage.goTo(LoginPage.java:42)
+	at org.example.tests.vendorportal.VendorPortalTest.loginTest(VendorPortalTest.java:37)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+2025-03-20 03:02:42.019 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\USER\AppData\Local\JetBrains\IdeaIC2024.2\temp-testng-customsuite.xml
+
+2025-03-20 03:02:42.036 [main] INFO  util.ResourceLoader - reading resource from location: config/default.properties
+2025-03-20 03:02:42.037 [main] ERROR util.Config - unable to read the property file config/default.properties
+java.nio.file.NoSuchFileException: config\default.properties
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:379)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:431)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:159)
+	at util.ResourceLoader.getResource(ResourceLoader.java:21)
+	at util.Config.loadProperties(Config.java:44)
+	at util.Config.initialize(Config.java:19)
+	at org.example.tests.AbstractTest.setupConfig(AbstractTest.java:32)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+2025-03-20 03:02:42.039 [main] INFO  util.Config - Test Properties
+2025-03-20 03:02:42.039 [main] INFO  util.Config - -----------------
+2025-03-20 03:02:42.039 [main] INFO  util.Config - -----------------
+2025-03-20 03:02:42.285 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 134.0.6998.90 (resolved driver for Chrome 134)
+2025-03-20 03:02:42.347 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\USER\.cache\selenium\chromedriver\win64\134.0.6998.90\chromedriver.exe
+2025-03-20 03:04:19.127 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  F:\SQA\Flight Reservation\Structured Selenium Automation\src\test\resources\test-suites\vendor-portal.xml
+
+2025-03-20 03:04:19.142 [main] INFO  util.ResourceLoader - reading resource from location: config/default.properties
+2025-03-20 03:04:19.143 [main] ERROR util.Config - unable to read the property file config/default.properties
+java.nio.file.NoSuchFileException: config\default.properties
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:379)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:431)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:159)
+	at util.ResourceLoader.getResource(ResourceLoader.java:21)
+	at util.Config.loadProperties(Config.java:44)
+	at util.Config.initialize(Config.java:19)
+	at org.example.tests.AbstractTest.setupConfig(AbstractTest.java:32)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+2025-03-20 03:04:19.145 [main] INFO  util.Config - Test Properties
+2025-03-20 03:04:19.145 [main] INFO  util.Config - -----------------
+2025-03-20 03:04:19.145 [main] INFO  util.Config - -----------------
+2025-03-20 03:04:19.400 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 134.0.6998.90 (resolved driver for Chrome 134)
+2025-03-20 03:04:19.462 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\USER\.cache\selenium\chromedriver\win64\134.0.6998.90\chromedriver.exe
+2025-03-20 03:04:20.228 [main] INFO  o.e.t.vendorportal.VendorPortalTest - Initializing test with data from: test-data/vendor-portal/sam.json
+2025-03-20 03:04:20.353 [main] INFO  util.ResourceLoader - reading resource from location: test-data/vendor-portal/sam.json
+2025-03-20 03:04:20.408 [main] INFO  o.e.t.vendorportal.VendorPortalTest - Starting vendor login test
+2025-03-20 03:04:20.409 [main] INFO  o.e.pages.vendorsportal.LoginPage - Navigating to: null
+2025-03-20 03:04:20.409 [main] ERROR o.e.pages.vendorsportal.LoginPage - Failed to navigate to: null
+java.lang.NullPointerException: null
+	at java.base/java.util.Objects.requireNonNull(Objects.java:233)
+	at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.java:1112)
+	at java.base/java.util.Map.of(Map.java:1365)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at org.example.pages.vendorsportal.LoginPage.goTo(LoginPage.java:42)
+	at org.example.tests.vendorportal.VendorPortalTest.loginTest(VendorPortalTest.java:37)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+2025-03-20 03:04:20.533 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 134.0.6998.90 (resolved driver for Chrome 134)
+2025-03-20 03:04:20.569 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\USER\.cache\selenium\chromedriver\win64\134.0.6998.90\chromedriver.exe
+2025-03-20 03:04:21.094 [main] INFO  o.e.t.vendorportal.VendorPortalTest - Initializing test with data from: test-data/vendor-portal/mike.json
+2025-03-20 03:04:21.095 [main] INFO  util.ResourceLoader - reading resource from location: test-data/vendor-portal/mike.json
+2025-03-20 03:04:21.096 [main] INFO  o.e.t.vendorportal.VendorPortalTest - Starting vendor login test
+2025-03-20 03:04:21.096 [main] INFO  o.e.pages.vendorsportal.LoginPage - Navigating to: null
+2025-03-20 03:04:21.097 [main] ERROR o.e.pages.vendorsportal.LoginPage - Failed to navigate to: null
+java.lang.NullPointerException: null
+	at java.base/java.util.Objects.requireNonNull(Objects.java:233)
+	at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.java:1112)
+	at java.base/java.util.Map.of(Map.java:1365)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at org.example.pages.vendorsportal.LoginPage.goTo(LoginPage.java:42)
+	at org.example.tests.vendorportal.VendorPortalTest.loginTest(VendorPortalTest.java:37)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+2025-03-20 03:04:21.229 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 134.0.6998.90 (resolved driver for Chrome 134)
+2025-03-20 03:04:21.271 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\USER\.cache\selenium\chromedriver\win64\134.0.6998.90\chromedriver.exe
+2025-03-20 03:04:21.804 [main] INFO  o.e.t.vendorportal.VendorPortalTest - Initializing test with data from: test-data/vendor-portal/john.json
+2025-03-20 03:04:21.805 [main] INFO  util.ResourceLoader - reading resource from location: test-data/vendor-portal/john.json
+2025-03-20 03:04:21.806 [main] INFO  o.e.t.vendorportal.VendorPortalTest - Starting vendor login test
+2025-03-20 03:04:21.806 [main] INFO  o.e.pages.vendorsportal.LoginPage - Navigating to: null
+2025-03-20 03:04:21.806 [main] ERROR o.e.pages.vendorsportal.LoginPage - Failed to navigate to: null
+java.lang.NullPointerException: null
+	at java.base/java.util.Objects.requireNonNull(Objects.java:233)
+	at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.java:1112)
+	at java.base/java.util.Map.of(Map.java:1365)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at org.example.pages.vendorsportal.LoginPage.goTo(LoginPage.java:42)
+	at org.example.tests.vendorportal.VendorPortalTest.loginTest(VendorPortalTest.java:37)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+2025-03-20 03:05:57.772 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  F:\SQA\Flight Reservation\Structured Selenium Automation\src\test\resources\test-suites\vendor-portal.xml
+
+2025-03-20 03:05:57.791 [main] INFO  util.ResourceLoader - reading resource from location: config/default.properties
+2025-03-20 03:05:57.792 [main] ERROR util.Config - unable to read the property file config/default.properties
+java.nio.file.NoSuchFileException: config\default.properties
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:379)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:431)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:159)
+	at util.ResourceLoader.getResource(ResourceLoader.java:21)
+	at util.Config.loadProperties(Config.java:44)
+	at util.Config.initialize(Config.java:19)
+	at org.example.tests.AbstractTest.setupConfig(AbstractTest.java:32)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+2025-03-20 03:05:57.794 [main] INFO  util.Config - Test Properties
+2025-03-20 03:05:57.794 [main] INFO  util.Config - -----------------
+2025-03-20 03:05:57.794 [main] INFO  util.Config - -----------------
+2025-03-20 03:05:58.094 [TestNG-tests-3] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 134.0.6998.90 (resolved driver for Chrome 134)
+2025-03-20 03:05:58.094 [TestNG-tests-2] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 134.0.6998.90 (resolved driver for Chrome 134)
+2025-03-20 03:05:58.094 [TestNG-tests-1] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 134.0.6998.90 (resolved driver for Chrome 134)
+2025-03-20 03:05:58.160 [TestNG-tests-2] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\USER\.cache\selenium\chromedriver\win64\134.0.6998.90\chromedriver.exe
+2025-03-20 03:05:58.160 [TestNG-tests-1] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\USER\.cache\selenium\chromedriver\win64\134.0.6998.90\chromedriver.exe
+2025-03-20 03:05:58.160 [TestNG-tests-3] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\USER\.cache\selenium\chromedriver\win64\134.0.6998.90\chromedriver.exe
+2025-03-20 03:05:59.165 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Initializing test with data from: test-data/vendor-portal/sam.json
+2025-03-20 03:05:59.165 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Initializing test with data from: test-data/vendor-portal/mike.json
+2025-03-20 03:05:59.165 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Initializing test with data from: test-data/vendor-portal/john.json
+2025-03-20 03:05:59.288 [TestNG-tests-2] INFO  util.ResourceLoader - reading resource from location: test-data/vendor-portal/mike.json
+2025-03-20 03:05:59.288 [TestNG-tests-1] INFO  util.ResourceLoader - reading resource from location: test-data/vendor-portal/sam.json
+2025-03-20 03:05:59.288 [TestNG-tests-3] INFO  util.ResourceLoader - reading resource from location: test-data/vendor-portal/john.json
+2025-03-20 03:05:59.353 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Starting vendor login test
+2025-03-20 03:05:59.354 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Starting vendor login test
+2025-03-20 03:05:59.354 [TestNG-tests-2] INFO  o.e.pages.vendorsportal.LoginPage - Navigating to: null
+2025-03-20 03:05:59.354 [TestNG-tests-1] INFO  o.e.pages.vendorsportal.LoginPage - Navigating to: null
+2025-03-20 03:05:59.353 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Starting vendor login test
+2025-03-20 03:05:59.354 [TestNG-tests-3] INFO  o.e.pages.vendorsportal.LoginPage - Navigating to: null
+2025-03-20 03:05:59.354 [TestNG-tests-3] ERROR o.e.pages.vendorsportal.LoginPage - Failed to navigate to: null
+java.lang.NullPointerException: null
+	at java.base/java.util.Objects.requireNonNull(Objects.java:233)
+	at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.java:1112)
+	at java.base/java.util.Map.of(Map.java:1365)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at org.example.pages.vendorsportal.LoginPage.goTo(LoginPage.java:42)
+	at org.example.tests.vendorportal.VendorPortalTest.loginTest(VendorPortalTest.java:37)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-03-20 03:05:59.354 [TestNG-tests-1] ERROR o.e.pages.vendorsportal.LoginPage - Failed to navigate to: null
+java.lang.NullPointerException: null
+	at java.base/java.util.Objects.requireNonNull(Objects.java:233)
+	at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.java:1112)
+	at java.base/java.util.Map.of(Map.java:1365)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at org.example.pages.vendorsportal.LoginPage.goTo(LoginPage.java:42)
+	at org.example.tests.vendorportal.VendorPortalTest.loginTest(VendorPortalTest.java:37)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-03-20 03:05:59.354 [TestNG-tests-2] ERROR o.e.pages.vendorsportal.LoginPage - Failed to navigate to: null
+java.lang.NullPointerException: null
+	at java.base/java.util.Objects.requireNonNull(Objects.java:233)
+	at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.java:1112)
+	at java.base/java.util.Map.of(Map.java:1365)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at org.example.pages.vendorsportal.LoginPage.goTo(LoginPage.java:42)
+	at org.example.tests.vendorportal.VendorPortalTest.loginTest(VendorPortalTest.java:37)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-03-20 03:06:10.977 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  F:\SQA\Flight Reservation\Structured Selenium Automation\src\test\resources\test-suites\vendor-portal.xml
+
+2025-03-20 03:06:10.990 [main] INFO  util.ResourceLoader - reading resource from location: config/default.properties
+2025-03-20 03:06:10.991 [main] ERROR util.Config - unable to read the property file config/default.properties
+java.nio.file.NoSuchFileException: config\default.properties
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:379)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:431)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:159)
+	at util.ResourceLoader.getResource(ResourceLoader.java:21)
+	at util.Config.loadProperties(Config.java:44)
+	at util.Config.initialize(Config.java:19)
+	at org.example.tests.AbstractTest.setupConfig(AbstractTest.java:32)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+2025-03-20 03:06:10.992 [main] INFO  util.Config - Test Properties
+2025-03-20 03:06:10.992 [main] INFO  util.Config - -----------------
+2025-03-20 03:06:10.992 [main] INFO  util.Config - -----------------
+2025-03-20 03:06:11.273 [TestNG-tests-1] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 134.0.6998.90 (resolved driver for Chrome 134)
+2025-03-20 03:06:11.273 [TestNG-tests-2] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 134.0.6998.90 (resolved driver for Chrome 134)
+2025-03-20 03:06:11.273 [TestNG-tests-3] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 134.0.6998.90 (resolved driver for Chrome 134)
+2025-03-20 03:06:11.342 [TestNG-tests-2] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\USER\.cache\selenium\chromedriver\win64\134.0.6998.90\chromedriver.exe
+2025-03-20 03:06:11.343 [TestNG-tests-1] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\USER\.cache\selenium\chromedriver\win64\134.0.6998.90\chromedriver.exe
+2025-03-20 03:06:11.344 [TestNG-tests-3] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\USER\.cache\selenium\chromedriver\win64\134.0.6998.90\chromedriver.exe
+2025-03-20 03:06:12.363 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Initializing test with data from: test-data/vendor-portal/john.json
+2025-03-20 03:06:12.363 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Initializing test with data from: test-data/vendor-portal/sam.json
+2025-03-20 03:06:12.364 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Initializing test with data from: test-data/vendor-portal/mike.json
+2025-03-20 03:06:12.506 [TestNG-tests-3] INFO  util.ResourceLoader - reading resource from location: test-data/vendor-portal/john.json
+2025-03-20 03:06:12.506 [TestNG-tests-1] INFO  util.ResourceLoader - reading resource from location: test-data/vendor-portal/sam.json
+2025-03-20 03:06:12.506 [TestNG-tests-2] INFO  util.ResourceLoader - reading resource from location: test-data/vendor-portal/mike.json
+2025-03-20 03:06:12.577 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Starting vendor login test
+2025-03-20 03:06:12.577 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Starting vendor login test
+2025-03-20 03:06:12.577 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Starting vendor login test
+2025-03-20 03:06:12.577 [TestNG-tests-3] INFO  o.e.pages.vendorsportal.LoginPage - Navigating to: null
+2025-03-20 03:06:12.577 [TestNG-tests-2] INFO  o.e.pages.vendorsportal.LoginPage - Navigating to: null
+2025-03-20 03:06:12.577 [TestNG-tests-1] INFO  o.e.pages.vendorsportal.LoginPage - Navigating to: null
+2025-03-20 03:06:12.577 [TestNG-tests-2] ERROR o.e.pages.vendorsportal.LoginPage - Failed to navigate to: null
+java.lang.NullPointerException: null
+	at java.base/java.util.Objects.requireNonNull(Objects.java:233)
+	at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.java:1112)
+	at java.base/java.util.Map.of(Map.java:1365)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at org.example.pages.vendorsportal.LoginPage.goTo(LoginPage.java:42)
+	at org.example.tests.vendorportal.VendorPortalTest.loginTest(VendorPortalTest.java:37)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-03-20 03:06:12.577 [TestNG-tests-3] ERROR o.e.pages.vendorsportal.LoginPage - Failed to navigate to: null
+java.lang.NullPointerException: null
+	at java.base/java.util.Objects.requireNonNull(Objects.java:233)
+	at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.java:1112)
+	at java.base/java.util.Map.of(Map.java:1365)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at org.example.pages.vendorsportal.LoginPage.goTo(LoginPage.java:42)
+	at org.example.tests.vendorportal.VendorPortalTest.loginTest(VendorPortalTest.java:37)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-03-20 03:06:12.577 [TestNG-tests-1] ERROR o.e.pages.vendorsportal.LoginPage - Failed to navigate to: null
+java.lang.NullPointerException: null
+	at java.base/java.util.Objects.requireNonNull(Objects.java:233)
+	at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.java:1112)
+	at java.base/java.util.Map.of(Map.java:1365)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at org.example.pages.vendorsportal.LoginPage.goTo(LoginPage.java:42)
+	at org.example.tests.vendorportal.VendorPortalTest.loginTest(VendorPortalTest.java:37)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-03-20 03:09:37.190 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  F:\SQA\Flight Reservation\Structured Selenium Automation\src\test\resources\test-suites\vendor-portal.xml
+
+2025-03-20 03:09:37.213 [main] INFO  util.ResourceLoader - reading resource from location: src/test/resources/test-data/config/default.properties
+2025-03-20 03:09:37.221 [main] INFO  util.Config - Test Properties
+2025-03-20 03:09:37.221 [main] INFO  util.Config - -----------------
+2025-03-20 03:09:37.221 [main] INFO  util.Config - selenium.grid.urlFormat=http://%s:4444/wd/hub
+2025-03-20 03:09:37.222 [main] INFO  util.Config - browser=chrome
+2025-03-20 03:09:37.222 [main] INFO  util.Config - vendorPortal.url=https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html
+2025-03-20 03:09:37.222 [main] INFO  util.Config - selenium.grid.enabled=false
+2025-03-20 03:09:37.222 [main] INFO  util.Config - flightReservation.url=https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/reservation-app/index.html
+2025-03-20 03:09:37.222 [main] INFO  util.Config - selenium.grid.hubHost=localhost
+2025-03-20 03:09:37.222 [main] INFO  util.Config - -----------------
+2025-03-20 03:09:37.529 [TestNG-tests-1] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 134.0.6998.90 (resolved driver for Chrome 134)
+2025-03-20 03:09:37.529 [TestNG-tests-3] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 134.0.6998.90 (resolved driver for Chrome 134)
+2025-03-20 03:09:37.529 [TestNG-tests-2] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 134.0.6998.90 (resolved driver for Chrome 134)
+2025-03-20 03:09:37.596 [TestNG-tests-2] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\USER\.cache\selenium\chromedriver\win64\134.0.6998.90\chromedriver.exe
+2025-03-20 03:09:37.603 [TestNG-tests-3] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\USER\.cache\selenium\chromedriver\win64\134.0.6998.90\chromedriver.exe
+2025-03-20 03:09:37.603 [TestNG-tests-1] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\USER\.cache\selenium\chromedriver\win64\134.0.6998.90\chromedriver.exe
+2025-03-20 03:09:38.599 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Initializing test with data from: test-data/vendor-portal/john.json
+2025-03-20 03:09:38.599 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Initializing test with data from: test-data/vendor-portal/mike.json
+2025-03-20 03:09:38.599 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Initializing test with data from: test-data/vendor-portal/sam.json
+2025-03-20 03:09:38.735 [TestNG-tests-1] INFO  util.ResourceLoader - reading resource from location: test-data/vendor-portal/sam.json
+2025-03-20 03:09:38.735 [TestNG-tests-2] INFO  util.ResourceLoader - reading resource from location: test-data/vendor-portal/mike.json
+2025-03-20 03:09:38.735 [TestNG-tests-3] INFO  util.ResourceLoader - reading resource from location: test-data/vendor-portal/john.json
+2025-03-20 03:09:38.799 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Starting vendor login test
+2025-03-20 03:09:38.799 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Starting vendor login test
+2025-03-20 03:09:38.799 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Starting vendor login test
+2025-03-20 03:09:38.799 [TestNG-tests-3] INFO  o.e.pages.vendorsportal.LoginPage - Navigating to: https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html
+2025-03-20 03:09:38.799 [TestNG-tests-1] INFO  o.e.pages.vendorsportal.LoginPage - Navigating to: https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html
+2025-03-20 03:09:38.799 [TestNG-tests-2] INFO  o.e.pages.vendorsportal.LoginPage - Navigating to: https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html
+2025-03-20 03:09:39.485 [TestNG-tests-2] INFO  o.e.pages.vendorsportal.LoginPage - Attempting login for user: mike
+2025-03-20 03:09:39.485 [TestNG-tests-3] INFO  o.e.pages.vendorsportal.LoginPage - Attempting login for user: john
+2025-03-20 03:09:39.485 [TestNG-tests-1] INFO  o.e.pages.vendorsportal.LoginPage - Attempting login for user: sam
+2025-03-20 03:09:39.726 [TestNG-tests-2] INFO  o.e.pages.vendorsportal.LoginPage - Login attempt completed for user: mike
+2025-03-20 03:09:39.726 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Login test completed successfully
+2025-03-20 03:09:39.731 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Starting dashboard verification test
+2025-03-20 03:09:39.736 [TestNG-tests-3] INFO  o.e.pages.vendorsportal.LoginPage - Login attempt completed for user: john
+2025-03-20 03:09:39.736 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Login test completed successfully
+2025-03-20 03:09:39.738 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Starting dashboard verification test
+2025-03-20 03:09:39.757 [TestNG-tests-1] INFO  o.e.pages.vendorsportal.LoginPage - Login attempt completed for user: sam
+2025-03-20 03:09:39.757 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Login test completed successfully
+2025-03-20 03:09:39.759 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Starting dashboard verification test
+2025-03-20 03:09:41.801 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Verifying financial metrics
+2025-03-20 03:09:41.857 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Testing order history search with keyword: adams
+2025-03-20 03:09:41.857 [TestNG-tests-1] INFO  o.e.p.vendorsportal.DashboardPage - Searching order history with keyword: adams
+2025-03-20 03:09:41.912 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Verifying financial metrics
+2025-03-20 03:09:41.990 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Testing order history search with keyword: 2024/01/01
+2025-03-20 03:09:41.990 [TestNG-tests-3] INFO  o.e.p.vendorsportal.DashboardPage - Searching order history with keyword: 2024/01/01
+2025-03-20 03:09:41.992 [TestNG-tests-1] DEBUG o.e.p.vendorsportal.DashboardPage - Raw search results text: Showing 1 to 8 of 8 entries (filtered from 99 total entries)
+2025-03-20 03:09:41.992 [TestNG-tests-1] INFO  o.e.p.vendorsportal.DashboardPage - Search results count: 8
+2025-03-20 03:09:41.992 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Dashboard test completed successfully
+2025-03-20 03:09:41.993 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Starting logout test
+2025-03-20 03:09:41.993 [TestNG-tests-1] INFO  o.e.p.vendorsportal.DashboardPage - Initiating logout process
+2025-03-20 03:09:42.086 [TestNG-tests-3] DEBUG o.e.p.vendorsportal.DashboardPage - Raw search results text: Showing 0 to 0 of 0 entries (filtered from 99 total entries)
+2025-03-20 03:09:42.087 [TestNG-tests-3] INFO  o.e.p.vendorsportal.DashboardPage - Search results count: 0
+2025-03-20 03:09:42.087 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Dashboard test completed successfully
+2025-03-20 03:09:42.088 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Starting logout test
+2025-03-20 03:09:42.088 [TestNG-tests-3] INFO  o.e.p.vendorsportal.DashboardPage - Initiating logout process
+2025-03-20 03:09:42.352 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Verifying financial metrics
+2025-03-20 03:09:42.404 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Testing order history search with keyword: miami
+2025-03-20 03:09:42.404 [TestNG-tests-2] INFO  o.e.p.vendorsportal.DashboardPage - Searching order history with keyword: miami
+2025-03-20 03:09:42.481 [TestNG-tests-2] DEBUG o.e.p.vendorsportal.DashboardPage - Raw search results text: Showing 1 to 10 of 10 entries (filtered from 99 total entries)
+2025-03-20 03:09:42.481 [TestNG-tests-2] INFO  o.e.p.vendorsportal.DashboardPage - Search results count: 10
+2025-03-20 03:09:42.481 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Dashboard test completed successfully
+2025-03-20 03:09:42.482 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Starting logout test
+2025-03-20 03:09:42.483 [TestNG-tests-2] INFO  o.e.p.vendorsportal.DashboardPage - Initiating logout process
+2025-03-20 03:09:46.223 [TestNG-tests-1] INFO  o.e.p.vendorsportal.DashboardPage - Logout completed successfully
+2025-03-20 03:09:46.247 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Logout test completed successfully
+2025-03-20 03:09:46.360 [TestNG-tests-3] INFO  o.e.p.vendorsportal.DashboardPage - Logout completed successfully
+2025-03-20 03:09:46.384 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Logout test completed successfully
+2025-03-20 03:09:46.723 [TestNG-tests-2] INFO  o.e.p.vendorsportal.DashboardPage - Logout completed successfully
+2025-03-20 03:09:46.750 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Logout test completed successfully
+2025-03-20 03:13:03.706 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  F:\SQA\Flight Reservation\Structured Selenium Automation\src\test\resources\test-suites\flight-reservation.xml
+
+2025-03-20 03:13:03.725 [main] INFO  util.ResourceLoader - reading resource from location: src/test/resources/test-data/config/default.properties
+2025-03-20 03:13:03.726 [main] INFO  util.Config - Test Properties
+2025-03-20 03:13:03.727 [main] INFO  util.Config - -----------------
+2025-03-20 03:13:03.727 [main] INFO  util.Config - selenium.grid.urlFormat=http://%s:4444/wd/hub
+2025-03-20 03:13:03.727 [main] INFO  util.Config - browser=chrome
+2025-03-20 03:13:03.727 [main] INFO  util.Config - vendorPortal.url=https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html
+2025-03-20 03:13:03.727 [main] INFO  util.Config - selenium.grid.enabled=false
+2025-03-20 03:13:03.727 [main] INFO  util.Config - flightReservation.url=https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/reservation-app/index.html
+2025-03-20 03:13:03.727 [main] INFO  util.Config - selenium.grid.hubHost=localhost
+2025-03-20 03:13:03.727 [main] INFO  util.Config - -----------------
+2025-03-20 03:13:04.043 [TestNG-tests-2] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 134.0.6998.90 (resolved driver for Chrome 134)
+2025-03-20 03:13:04.043 [TestNG-tests-4] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 134.0.6998.90 (resolved driver for Chrome 134)
+2025-03-20 03:13:04.043 [TestNG-tests-3] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 134.0.6998.90 (resolved driver for Chrome 134)
+2025-03-20 03:13:04.043 [TestNG-tests-1] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 134.0.6998.90 (resolved driver for Chrome 134)
+2025-03-20 03:13:04.132 [TestNG-tests-1] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\USER\.cache\selenium\chromedriver\win64\134.0.6998.90\chromedriver.exe
+2025-03-20 03:13:04.132 [TestNG-tests-2] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\USER\.cache\selenium\chromedriver\win64\134.0.6998.90\chromedriver.exe
+2025-03-20 03:13:04.135 [TestNG-tests-3] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\USER\.cache\selenium\chromedriver\win64\134.0.6998.90\chromedriver.exe
+2025-03-20 03:13:04.135 [TestNG-tests-4] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\USER\.cache\selenium\chromedriver\win64\134.0.6998.90\chromedriver.exe
+2025-03-20 03:13:05.445 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-2.json
+2025-03-20 03:13:05.445 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-3.json
+2025-03-20 03:13:05.445 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-4.json
+2025-03-20 03:13:05.445 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-1.json
+2025-03-20 03:13:05.589 [TestNG-tests-3] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-3.json
+2025-03-20 03:13:05.589 [TestNG-tests-2] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-2.json
+2025-03-20 03:13:05.589 [TestNG-tests-4] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-4.json
+2025-03-20 03:13:05.589 [TestNG-tests-1] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-1.json
+2025-03-20 03:13:05.671 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-20 03:13:05.671 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-20 03:13:05.671 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-20 03:13:05.671 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-20 03:13:09.201 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-20 03:13:09.206 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-20 03:13:09.210 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-20 03:13:09.213 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-20 03:13:09.360 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-20 03:13:09.362 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-20 03:13:09.446 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-20 03:13:09.448 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-20 03:13:11.345 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 4 passengers
+2025-03-20 03:13:11.346 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 3 passengers
+2025-03-20 03:13:11.493 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 2 passengers
+2025-03-20 03:13:11.585 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-20 03:13:11.604 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 1 passengers
+2025-03-20 03:13:13.556 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-20 03:13:13.709 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-20 03:13:13.805 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-20 03:13:13.971 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-20 03:13:15.979 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-20 03:13:16.031 [TestNG-tests-4] INFO  o.e.p.f.FlightConfirmationPage - Total price : $2338 USD
+2025-03-20 03:13:16.031 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $2338 USD
+2025-03-20 03:13:16.148 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-20 03:13:16.232 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-20 03:13:18.040 [TestNG-tests-3] INFO  o.e.p.f.FlightConfirmationPage - Total price : $1753 USD
+2025-03-20 03:13:18.040 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $1753 USD
+2025-03-20 03:13:18.210 [TestNG-tests-2] INFO  o.e.p.f.FlightConfirmationPage - Total price : $1169 USD
+2025-03-20 03:13:18.210 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $1169 USD
+2025-03-20 03:13:18.305 [TestNG-tests-1] INFO  o.e.p.f.FlightConfirmationPage - Total price : $584 USD
+2025-03-20 03:13:18.305 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $584 USD
+2025-03-20 03:14:01.037 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  F:\SQA\Flight Reservation\Structured Selenium Automation\src\test\resources\test-suites\vendor-portal.xml
+
+2025-03-20 03:14:01.053 [main] INFO  util.ResourceLoader - reading resource from location: src/test/resources/test-data/config/default.properties
+2025-03-20 03:14:01.054 [main] INFO  util.Config - Test Properties
+2025-03-20 03:14:01.054 [main] INFO  util.Config - -----------------
+2025-03-20 03:14:01.054 [main] INFO  util.Config - selenium.grid.urlFormat=http://%s:4444/wd/hub
+2025-03-20 03:14:01.055 [main] INFO  util.Config - browser=chrome
+2025-03-20 03:14:01.055 [main] INFO  util.Config - vendorPortal.url=https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html
+2025-03-20 03:14:01.055 [main] INFO  util.Config - selenium.grid.enabled=false
+2025-03-20 03:14:01.055 [main] INFO  util.Config - flightReservation.url=https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/reservation-app/index.html
+2025-03-20 03:14:01.055 [main] INFO  util.Config - selenium.grid.hubHost=localhost
+2025-03-20 03:14:01.055 [main] INFO  util.Config - -----------------
+2025-03-20 03:14:01.366 [TestNG-tests-1] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 134.0.6998.90 (resolved driver for Chrome 134)
+2025-03-20 03:14:01.366 [TestNG-tests-2] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 134.0.6998.90 (resolved driver for Chrome 134)
+2025-03-20 03:14:01.366 [TestNG-tests-3] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 134.0.6998.90 (resolved driver for Chrome 134)
+2025-03-20 03:14:01.434 [TestNG-tests-1] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\USER\.cache\selenium\chromedriver\win64\134.0.6998.90\chromedriver.exe
+2025-03-20 03:14:01.434 [TestNG-tests-2] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\USER\.cache\selenium\chromedriver\win64\134.0.6998.90\chromedriver.exe
+2025-03-20 03:14:01.434 [TestNG-tests-3] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\USER\.cache\selenium\chromedriver\win64\134.0.6998.90\chromedriver.exe
+2025-03-20 03:14:02.541 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Initializing test with data from: test-data/vendor-portal/john.json
+2025-03-20 03:14:02.551 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Initializing test with data from: test-data/vendor-portal/mike.json
+2025-03-20 03:14:02.578 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Initializing test with data from: test-data/vendor-portal/sam.json
+2025-03-20 03:14:02.702 [TestNG-tests-3] INFO  util.ResourceLoader - reading resource from location: test-data/vendor-portal/john.json
+2025-03-20 03:14:02.702 [TestNG-tests-2] INFO  util.ResourceLoader - reading resource from location: test-data/vendor-portal/mike.json
+2025-03-20 03:14:02.702 [TestNG-tests-1] INFO  util.ResourceLoader - reading resource from location: test-data/vendor-portal/sam.json
+2025-03-20 03:14:02.774 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Starting vendor login test
+2025-03-20 03:14:02.774 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Starting vendor login test
+2025-03-20 03:14:02.774 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Starting vendor login test
+2025-03-20 03:14:02.774 [TestNG-tests-3] INFO  o.e.pages.vendorsportal.LoginPage - Navigating to: https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html
+2025-03-20 03:14:02.774 [TestNG-tests-2] INFO  o.e.pages.vendorsportal.LoginPage - Navigating to: https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html
+2025-03-20 03:14:02.774 [TestNG-tests-1] INFO  o.e.pages.vendorsportal.LoginPage - Navigating to: https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html
+2025-03-20 03:14:03.391 [TestNG-tests-1] INFO  o.e.pages.vendorsportal.LoginPage - Attempting login for user: sam
+2025-03-20 03:14:03.400 [TestNG-tests-3] INFO  o.e.pages.vendorsportal.LoginPage - Attempting login for user: john
+2025-03-20 03:14:03.410 [TestNG-tests-2] INFO  o.e.pages.vendorsportal.LoginPage - Attempting login for user: mike
+2025-03-20 03:14:03.644 [TestNG-tests-1] INFO  o.e.pages.vendorsportal.LoginPage - Login attempt completed for user: sam
+2025-03-20 03:14:03.644 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Login test completed successfully
+2025-03-20 03:14:03.650 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Starting dashboard verification test
+2025-03-20 03:14:03.662 [TestNG-tests-2] INFO  o.e.pages.vendorsportal.LoginPage - Login attempt completed for user: mike
+2025-03-20 03:14:03.662 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Login test completed successfully
+2025-03-20 03:14:03.664 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Starting dashboard verification test
+2025-03-20 03:14:03.668 [TestNG-tests-3] INFO  o.e.pages.vendorsportal.LoginPage - Login attempt completed for user: john
+2025-03-20 03:14:03.668 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Login test completed successfully
+2025-03-20 03:14:03.669 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Starting dashboard verification test
+2025-03-20 03:14:05.702 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Verifying financial metrics
+2025-03-20 03:14:05.720 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Verifying financial metrics
+2025-03-20 03:14:05.775 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Testing order history search with keyword: adams
+2025-03-20 03:14:05.775 [TestNG-tests-1] INFO  o.e.p.vendorsportal.DashboardPage - Searching order history with keyword: adams
+2025-03-20 03:14:05.784 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Testing order history search with keyword: 2024/01/01
+2025-03-20 03:14:05.784 [TestNG-tests-3] INFO  o.e.p.vendorsportal.DashboardPage - Searching order history with keyword: 2024/01/01
+2025-03-20 03:14:05.882 [TestNG-tests-1] DEBUG o.e.p.vendorsportal.DashboardPage - Raw search results text: Showing 1 to 8 of 8 entries (filtered from 99 total entries)
+2025-03-20 03:14:05.882 [TestNG-tests-1] INFO  o.e.p.vendorsportal.DashboardPage - Search results count: 8
+2025-03-20 03:14:05.882 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Dashboard test completed successfully
+2025-03-20 03:14:05.884 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Starting logout test
+2025-03-20 03:14:05.884 [TestNG-tests-1] INFO  o.e.p.vendorsportal.DashboardPage - Initiating logout process
+2025-03-20 03:14:05.906 [TestNG-tests-3] DEBUG o.e.p.vendorsportal.DashboardPage - Raw search results text: Showing 0 to 0 of 0 entries (filtered from 99 total entries)
+2025-03-20 03:14:05.906 [TestNG-tests-3] INFO  o.e.p.vendorsportal.DashboardPage - Search results count: 0
+2025-03-20 03:14:05.906 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Dashboard test completed successfully
+2025-03-20 03:14:05.907 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Starting logout test
+2025-03-20 03:14:05.907 [TestNG-tests-3] INFO  o.e.p.vendorsportal.DashboardPage - Initiating logout process
+2025-03-20 03:14:06.178 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Verifying financial metrics
+2025-03-20 03:14:06.237 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Testing order history search with keyword: miami
+2025-03-20 03:14:06.237 [TestNG-tests-2] INFO  o.e.p.vendorsportal.DashboardPage - Searching order history with keyword: miami
+2025-03-20 03:14:06.317 [TestNG-tests-2] DEBUG o.e.p.vendorsportal.DashboardPage - Raw search results text: Showing 1 to 10 of 10 entries (filtered from 99 total entries)
+2025-03-20 03:14:06.317 [TestNG-tests-2] INFO  o.e.p.vendorsportal.DashboardPage - Search results count: 10
+2025-03-20 03:14:06.317 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Dashboard test completed successfully
+2025-03-20 03:14:06.319 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Starting logout test
+2025-03-20 03:14:06.319 [TestNG-tests-2] INFO  o.e.p.vendorsportal.DashboardPage - Initiating logout process
+2025-03-20 03:14:10.108 [TestNG-tests-1] INFO  o.e.p.vendorsportal.DashboardPage - Logout completed successfully
+2025-03-20 03:14:10.135 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Logout test completed successfully
+2025-03-20 03:14:10.156 [TestNG-tests-3] INFO  o.e.p.vendorsportal.DashboardPage - Logout completed successfully
+2025-03-20 03:14:10.194 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Logout test completed successfully
+2025-03-20 03:14:10.559 [TestNG-tests-2] INFO  o.e.p.vendorsportal.DashboardPage - Logout completed successfully
+2025-03-20 03:14:10.582 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Logout test completed successfully
+2025-03-20 03:14:27.695 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  F:\SQA\Flight Reservation\Structured Selenium Automation\src\test\resources\test-suites\vendor-portal.xml
+
+2025-03-20 03:14:27.711 [main] INFO  util.ResourceLoader - reading resource from location: src/test/resources/test-data/config/default.properties
+2025-03-20 03:14:27.712 [main] INFO  util.Config - Test Properties
+2025-03-20 03:14:27.712 [main] INFO  util.Config - -----------------
+2025-03-20 03:14:27.713 [main] INFO  util.Config - selenium.grid.urlFormat=http://%s:4444/wd/hub
+2025-03-20 03:14:27.713 [main] INFO  util.Config - browser=chrome
+2025-03-20 03:14:27.713 [main] INFO  util.Config - vendorPortal.url=https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html
+2025-03-20 03:14:27.713 [main] INFO  util.Config - selenium.grid.enabled=false
+2025-03-20 03:14:27.713 [main] INFO  util.Config - flightReservation.url=https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/reservation-app/index.html
+2025-03-20 03:14:27.713 [main] INFO  util.Config - selenium.grid.hubHost=localhost
+2025-03-20 03:14:27.713 [main] INFO  util.Config - -----------------
+2025-03-20 03:14:28.010 [TestNG-tests-2] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 134.0.6998.90 (resolved driver for Chrome 134)
+2025-03-20 03:14:28.010 [TestNG-tests-1] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 134.0.6998.90 (resolved driver for Chrome 134)
+2025-03-20 03:14:28.010 [TestNG-tests-3] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 134.0.6998.90 (resolved driver for Chrome 134)
+2025-03-20 03:14:28.074 [TestNG-tests-1] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\USER\.cache\selenium\chromedriver\win64\134.0.6998.90\chromedriver.exe
+2025-03-20 03:14:28.075 [TestNG-tests-2] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\USER\.cache\selenium\chromedriver\win64\134.0.6998.90\chromedriver.exe
+2025-03-20 03:14:28.075 [TestNG-tests-3] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\USER\.cache\selenium\chromedriver\win64\134.0.6998.90\chromedriver.exe
+2025-03-20 03:14:29.122 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Initializing test with data from: test-data/vendor-portal/sam.json
+2025-03-20 03:14:29.122 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Initializing test with data from: test-data/vendor-portal/john.json
+2025-03-20 03:14:29.133 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Initializing test with data from: test-data/vendor-portal/mike.json
+2025-03-20 03:14:29.265 [TestNG-tests-1] INFO  util.ResourceLoader - reading resource from location: test-data/vendor-portal/sam.json
+2025-03-20 03:14:29.265 [TestNG-tests-2] INFO  util.ResourceLoader - reading resource from location: test-data/vendor-portal/mike.json
+2025-03-20 03:14:29.265 [TestNG-tests-3] INFO  util.ResourceLoader - reading resource from location: test-data/vendor-portal/john.json
+2025-03-20 03:14:29.328 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Starting vendor login test
+2025-03-20 03:14:29.328 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Starting vendor login test
+2025-03-20 03:14:29.328 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Starting vendor login test
+2025-03-20 03:14:29.328 [TestNG-tests-2] INFO  o.e.pages.vendorsportal.LoginPage - Navigating to: https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html
+2025-03-20 03:14:29.328 [TestNG-tests-3] INFO  o.e.pages.vendorsportal.LoginPage - Navigating to: https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html
+2025-03-20 03:14:29.328 [TestNG-tests-1] INFO  o.e.pages.vendorsportal.LoginPage - Navigating to: https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html
+2025-03-20 03:14:29.968 [TestNG-tests-2] INFO  o.e.pages.vendorsportal.LoginPage - Attempting login for user: mike
+2025-03-20 03:14:29.987 [TestNG-tests-3] INFO  o.e.pages.vendorsportal.LoginPage - Attempting login for user: john
+2025-03-20 03:14:30.005 [TestNG-tests-1] INFO  o.e.pages.vendorsportal.LoginPage - Attempting login for user: sam
+2025-03-20 03:14:30.218 [TestNG-tests-2] INFO  o.e.pages.vendorsportal.LoginPage - Login attempt completed for user: mike
+2025-03-20 03:14:30.218 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Login test completed successfully
+2025-03-20 03:14:30.227 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Starting dashboard verification test
+2025-03-20 03:14:30.260 [TestNG-tests-3] INFO  o.e.pages.vendorsportal.LoginPage - Login attempt completed for user: john
+2025-03-20 03:14:30.260 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Login test completed successfully
+2025-03-20 03:14:30.263 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Starting dashboard verification test
+2025-03-20 03:14:30.269 [TestNG-tests-1] INFO  o.e.pages.vendorsportal.LoginPage - Login attempt completed for user: sam
+2025-03-20 03:14:30.269 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Login test completed successfully
+2025-03-20 03:14:30.271 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Starting dashboard verification test
+2025-03-20 03:14:32.313 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Verifying financial metrics
+2025-03-20 03:14:32.374 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Testing order history search with keyword: 2024/01/01
+2025-03-20 03:14:32.374 [TestNG-tests-3] INFO  o.e.p.vendorsportal.DashboardPage - Searching order history with keyword: 2024/01/01
+2025-03-20 03:14:32.442 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Verifying financial metrics
+2025-03-20 03:14:32.500 [TestNG-tests-3] DEBUG o.e.p.vendorsportal.DashboardPage - Raw search results text: Showing 0 to 0 of 0 entries (filtered from 99 total entries)
+2025-03-20 03:14:32.501 [TestNG-tests-3] INFO  o.e.p.vendorsportal.DashboardPage - Search results count: 0
+2025-03-20 03:14:32.501 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Dashboard test completed successfully
+2025-03-20 03:14:32.503 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Starting logout test
+2025-03-20 03:14:32.503 [TestNG-tests-3] INFO  o.e.p.vendorsportal.DashboardPage - Initiating logout process
+2025-03-20 03:14:32.508 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Testing order history search with keyword: adams
+2025-03-20 03:14:32.509 [TestNG-tests-1] INFO  o.e.p.vendorsportal.DashboardPage - Searching order history with keyword: adams
+2025-03-20 03:14:32.598 [TestNG-tests-1] DEBUG o.e.p.vendorsportal.DashboardPage - Raw search results text: Showing 1 to 8 of 8 entries (filtered from 99 total entries)
+2025-03-20 03:14:32.598 [TestNG-tests-1] INFO  o.e.p.vendorsportal.DashboardPage - Search results count: 8
+2025-03-20 03:14:32.598 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Dashboard test completed successfully
+2025-03-20 03:14:32.599 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Starting logout test
+2025-03-20 03:14:32.599 [TestNG-tests-1] INFO  o.e.p.vendorsportal.DashboardPage - Initiating logout process
+2025-03-20 03:14:32.978 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Verifying financial metrics
+2025-03-20 03:14:33.030 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Testing order history search with keyword: miami
+2025-03-20 03:14:33.030 [TestNG-tests-2] INFO  o.e.p.vendorsportal.DashboardPage - Searching order history with keyword: miami
+2025-03-20 03:14:33.108 [TestNG-tests-2] DEBUG o.e.p.vendorsportal.DashboardPage - Raw search results text: Showing 1 to 10 of 10 entries (filtered from 99 total entries)
+2025-03-20 03:14:33.108 [TestNG-tests-2] INFO  o.e.p.vendorsportal.DashboardPage - Search results count: 10
+2025-03-20 03:14:33.108 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Dashboard test completed successfully
+2025-03-20 03:14:33.109 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Starting logout test
+2025-03-20 03:14:33.109 [TestNG-tests-2] INFO  o.e.p.vendorsportal.DashboardPage - Initiating logout process
+2025-03-20 03:14:36.727 [TestNG-tests-3] INFO  o.e.p.vendorsportal.DashboardPage - Logout completed successfully
+2025-03-20 03:14:36.751 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Logout test completed successfully
+2025-03-20 03:14:36.863 [TestNG-tests-1] INFO  o.e.p.vendorsportal.DashboardPage - Logout completed successfully
+2025-03-20 03:14:36.891 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Logout test completed successfully
+2025-03-20 03:14:37.337 [TestNG-tests-2] INFO  o.e.p.vendorsportal.DashboardPage - Logout completed successfully
+2025-03-20 03:14:37.364 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Logout test completed successfully
+2025-03-20 03:20:07.400 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  F:\SQA\Flight Reservation\Structured Selenium Automation\src\test\resources\test-suites\vendor-portal.xml
+
+2025-03-20 03:20:07.414 [main] INFO  util.ResourceLoader - reading resource from location: src/test/resources/test-data/config/default.properties
+2025-03-20 03:20:07.415 [main] INFO  util.Config - Test Properties
+2025-03-20 03:20:07.415 [main] INFO  util.Config - -----------------
+2025-03-20 03:20:07.415 [main] INFO  util.Config - selenium.grid.urlFormat=http://%s:4444/wd/hub
+2025-03-20 03:20:07.415 [main] INFO  util.Config - browser=chrome
+2025-03-20 03:20:07.415 [main] INFO  util.Config - vendorPortal.url=https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html
+2025-03-20 03:20:07.415 [main] INFO  util.Config - selenium.grid.enabled=true
+2025-03-20 03:20:07.415 [main] INFO  util.Config - flightReservation.url=https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/reservation-app/index.html
+2025-03-20 03:20:07.415 [main] INFO  util.Config - selenium.grid.hubHost=localhost
+2025-03-20 03:20:07.415 [main] INFO  util.Config - -----------------
+2025-03-20 03:20:07.445 [TestNG-tests-1] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-20 03:20:07.445 [TestNG-tests-3] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-20 03:20:07.445 [TestNG-tests-2] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-20 03:20:10.108 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Initializing test with data from: test-data/vendor-portal/mike.json
+2025-03-20 03:20:10.108 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Initializing test with data from: test-data/vendor-portal/sam.json
+2025-03-20 03:20:10.109 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Initializing test with data from: test-data/vendor-portal/john.json
+2025-03-20 03:20:10.258 [TestNG-tests-2] INFO  util.ResourceLoader - reading resource from location: test-data/vendor-portal/mike.json
+2025-03-20 03:20:10.258 [TestNG-tests-1] INFO  util.ResourceLoader - reading resource from location: test-data/vendor-portal/sam.json
+2025-03-20 03:20:10.259 [TestNG-tests-3] INFO  util.ResourceLoader - reading resource from location: test-data/vendor-portal/john.json
+2025-03-20 03:20:10.337 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Starting vendor login test
+2025-03-20 03:20:10.337 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Starting vendor login test
+2025-03-20 03:20:10.337 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Starting vendor login test
+2025-03-20 03:20:10.337 [TestNG-tests-1] INFO  o.e.pages.vendorsportal.LoginPage - Navigating to: https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html
+2025-03-20 03:20:10.337 [TestNG-tests-3] INFO  o.e.pages.vendorsportal.LoginPage - Navigating to: https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html
+2025-03-20 03:20:10.337 [TestNG-tests-2] INFO  o.e.pages.vendorsportal.LoginPage - Navigating to: https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html
+2025-03-20 03:20:11.290 [TestNG-tests-1] INFO  o.e.pages.vendorsportal.LoginPage - Attempting login for user: sam
+2025-03-20 03:20:11.290 [TestNG-tests-2] INFO  o.e.pages.vendorsportal.LoginPage - Attempting login for user: mike
+2025-03-20 03:20:11.290 [TestNG-tests-3] INFO  o.e.pages.vendorsportal.LoginPage - Attempting login for user: john
+2025-03-20 03:20:11.759 [TestNG-tests-1] INFO  o.e.pages.vendorsportal.LoginPage - Login attempt completed for user: sam
+2025-03-20 03:20:11.759 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Login test completed successfully
+2025-03-20 03:20:11.764 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Starting dashboard verification test
+2025-03-20 03:20:11.770 [TestNG-tests-2] INFO  o.e.pages.vendorsportal.LoginPage - Login attempt completed for user: mike
+2025-03-20 03:20:11.770 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Login test completed successfully
+2025-03-20 03:20:11.772 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Starting dashboard verification test
+2025-03-20 03:20:11.782 [TestNG-tests-3] INFO  o.e.pages.vendorsportal.LoginPage - Login attempt completed for user: john
+2025-03-20 03:20:11.782 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Login test completed successfully
+2025-03-20 03:20:11.784 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Starting dashboard verification test
+2025-03-20 03:20:13.893 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Verifying financial metrics
+2025-03-20 03:20:14.042 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Verifying financial metrics
+2025-03-20 03:20:14.048 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Testing order history search with keyword: 2024/01/01
+2025-03-20 03:20:14.048 [TestNG-tests-3] INFO  o.e.p.vendorsportal.DashboardPage - Searching order history with keyword: 2024/01/01
+2025-03-20 03:20:14.051 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Verifying financial metrics
+2025-03-20 03:20:14.206 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Testing order history search with keyword: adams
+2025-03-20 03:20:14.206 [TestNG-tests-1] INFO  o.e.p.vendorsportal.DashboardPage - Searching order history with keyword: adams
+2025-03-20 03:20:14.217 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Testing order history search with keyword: miami
+2025-03-20 03:20:14.218 [TestNG-tests-2] INFO  o.e.p.vendorsportal.DashboardPage - Searching order history with keyword: miami
+2025-03-20 03:20:14.276 [TestNG-tests-3] DEBUG o.e.p.vendorsportal.DashboardPage - Raw search results text: Showing 0 to 0 of 0 entries (filtered from 99 total entries)
+2025-03-20 03:20:14.276 [TestNG-tests-3] INFO  o.e.p.vendorsportal.DashboardPage - Search results count: 0
+2025-03-20 03:20:14.276 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Dashboard test completed successfully
+2025-03-20 03:20:14.278 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Starting logout test
+2025-03-20 03:20:14.278 [TestNG-tests-3] INFO  o.e.p.vendorsportal.DashboardPage - Initiating logout process
+2025-03-20 03:20:14.409 [TestNG-tests-1] DEBUG o.e.p.vendorsportal.DashboardPage - Raw search results text: Showing 1 to 8 of 8 entries (filtered from 99 total entries)
+2025-03-20 03:20:14.409 [TestNG-tests-1] INFO  o.e.p.vendorsportal.DashboardPage - Search results count: 8
+2025-03-20 03:20:14.409 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Dashboard test completed successfully
+2025-03-20 03:20:14.411 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Starting logout test
+2025-03-20 03:20:14.411 [TestNG-tests-1] INFO  o.e.p.vendorsportal.DashboardPage - Initiating logout process
+2025-03-20 03:20:14.418 [TestNG-tests-2] DEBUG o.e.p.vendorsportal.DashboardPage - Raw search results text: Showing 1 to 10 of 10 entries (filtered from 99 total entries)
+2025-03-20 03:20:14.419 [TestNG-tests-2] INFO  o.e.p.vendorsportal.DashboardPage - Search results count: 10
+2025-03-20 03:20:14.419 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Dashboard test completed successfully
+2025-03-20 03:20:14.421 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Starting logout test
+2025-03-20 03:20:14.421 [TestNG-tests-2] INFO  o.e.p.vendorsportal.DashboardPage - Initiating logout process
+2025-03-20 03:20:16.782 [TestNG-tests-3] INFO  o.e.p.vendorsportal.DashboardPage - Logout completed successfully
+2025-03-20 03:20:16.862 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Logout test completed successfully
+2025-03-20 03:20:20.922 [TestNG-tests-1] INFO  o.e.p.vendorsportal.DashboardPage - Logout completed successfully
+2025-03-20 03:20:21.010 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Logout test completed successfully
+2025-03-20 03:20:25.048 [TestNG-tests-2] INFO  o.e.p.vendorsportal.DashboardPage - Logout completed successfully
+2025-03-20 03:20:25.120 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Logout test completed successfully
+2025-03-20 03:20:37.121 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  F:\SQA\Flight Reservation\Structured Selenium Automation\src\test\resources\test-suites\flight-reservation.xml
+
+2025-03-20 03:20:37.141 [main] INFO  util.ResourceLoader - reading resource from location: src/test/resources/test-data/config/default.properties
+2025-03-20 03:20:37.142 [main] INFO  util.Config - Test Properties
+2025-03-20 03:20:37.142 [main] INFO  util.Config - -----------------
+2025-03-20 03:20:37.142 [main] INFO  util.Config - selenium.grid.urlFormat=http://%s:4444/wd/hub
+2025-03-20 03:20:37.142 [main] INFO  util.Config - browser=chrome
+2025-03-20 03:20:37.142 [main] INFO  util.Config - vendorPortal.url=https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html
+2025-03-20 03:20:37.142 [main] INFO  util.Config - selenium.grid.enabled=true
+2025-03-20 03:20:37.143 [main] INFO  util.Config - flightReservation.url=https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/reservation-app/index.html
+2025-03-20 03:20:37.143 [main] INFO  util.Config - selenium.grid.hubHost=localhost
+2025-03-20 03:20:37.143 [main] INFO  util.Config - -----------------
+2025-03-20 03:20:37.167 [TestNG-tests-3] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-20 03:20:37.167 [TestNG-tests-1] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-20 03:20:37.167 [TestNG-tests-4] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-20 03:20:37.167 [TestNG-tests-2] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-20 03:20:38.455 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-3.json
+2025-03-20 03:20:38.455 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-2.json
+2025-03-20 03:20:38.461 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-1.json
+2025-03-20 03:20:38.481 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-4.json
+2025-03-20 03:20:38.626 [TestNG-tests-4] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-4.json
+2025-03-20 03:20:38.626 [TestNG-tests-1] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-1.json
+2025-03-20 03:20:38.626 [TestNG-tests-2] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-2.json
+2025-03-20 03:20:38.626 [TestNG-tests-3] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-3.json
+2025-03-20 03:20:38.701 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-20 03:20:38.701 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-20 03:20:38.701 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-20 03:20:38.701 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-20 03:20:41.237 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-20 03:20:41.243 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-20 03:20:41.303 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-20 03:20:41.305 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-20 03:20:41.487 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-20 03:20:41.489 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-20 03:20:41.712 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-20 03:20:41.713 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-20 03:20:43.479 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 4 passengers
+2025-03-20 03:20:43.536 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 1 passengers
+2025-03-20 03:20:43.722 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 2 passengers
+2025-03-20 03:20:43.927 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 3 passengers
+2025-03-20 03:20:45.979 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-20 03:20:45.995 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-20 03:20:46.234 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-20 03:20:48.557 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-20 03:20:48.959 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-20 03:20:48.962 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-20 03:20:49.163 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-20 03:20:51.071 [TestNG-tests-1] INFO  o.e.p.f.FlightConfirmationPage - Total price : $584 USD
+2025-03-20 03:20:51.071 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $584 USD
+2025-03-20 03:20:51.282 [TestNG-tests-2] INFO  o.e.p.f.FlightConfirmationPage - Total price : $1169 USD
+2025-03-20 03:20:51.282 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $1169 USD
+2025-03-20 03:20:51.340 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-20 03:20:53.104 [TestNG-tests-4] INFO  o.e.p.f.FlightConfirmationPage - Total price : $2338 USD
+2025-03-20 03:20:53.104 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $2338 USD
+2025-03-20 03:20:53.481 [TestNG-tests-3] INFO  o.e.p.f.FlightConfirmationPage - Total price : $1753 USD
+2025-03-20 03:20:53.481 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $1753 USD
+2025-03-20 03:39:00.666 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  F:\SQA\Flight Reservation\Structured Selenium Automation\src\test\resources\test-suites\flight-reservation.xml
+
+2025-03-20 03:39:00.685 [main] INFO  util.ResourceLoader - reading resource from location: src/test/resources/test-data/config/default.properties
+2025-03-20 03:39:00.686 [main] INFO  util.Config - Test Properties
+2025-03-20 03:39:00.686 [main] INFO  util.Config - -----------------
+2025-03-20 03:39:00.687 [main] INFO  util.Config - selenium.grid.urlFormat=http://%s:4444/wd/hub
+2025-03-20 03:39:00.687 [main] INFO  util.Config - browser=chrome
+2025-03-20 03:39:00.687 [main] INFO  util.Config - vendorPortal.url=https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html
+2025-03-20 03:39:00.687 [main] INFO  util.Config - selenium.grid.enabled=true
+2025-03-20 03:39:00.687 [main] INFO  util.Config - flightReservation.url=https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/reservation-app/index.html
+2025-03-20 03:39:00.687 [main] INFO  util.Config - selenium.grid.hubHost=localhost
+2025-03-20 03:39:00.687 [main] INFO  util.Config - -----------------
+2025-03-20 03:39:00.721 [TestNG-tests-1] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-20 03:39:00.721 [TestNG-tests-3] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-20 03:39:00.721 [TestNG-tests-4] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-20 03:39:00.721 [TestNG-tests-2] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-20 03:39:03.490 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-3.json
+2025-03-20 03:39:03.490 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-1.json
+2025-03-20 03:39:03.490 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-4.json
+2025-03-20 03:39:03.497 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-2.json
+2025-03-20 03:39:03.632 [TestNG-tests-4] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-4.json
+2025-03-20 03:39:03.632 [TestNG-tests-2] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-2.json
+2025-03-20 03:39:03.632 [TestNG-tests-1] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-1.json
+2025-03-20 03:39:03.632 [TestNG-tests-3] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-3.json
+2025-03-20 03:39:03.702 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-20 03:39:03.702 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-20 03:39:03.702 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-20 03:39:03.702 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-20 03:39:06.479 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-20 03:39:06.497 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-20 03:39:06.719 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-20 03:39:06.820 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-20 03:39:11.501 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-20 03:39:11.515 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-20 03:39:11.731 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-20 03:39:11.823 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-20 03:39:16.728 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 1 passengers
+2025-03-20 03:39:16.728 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 4 passengers
+2025-03-20 03:39:16.958 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 3 passengers
+2025-03-20 03:39:17.038 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 2 passengers
+2025-03-20 03:39:22.232 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-20 03:39:22.279 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-20 03:39:22.509 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-20 03:39:22.556 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-20 03:39:28.091 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-20 03:39:28.121 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-20 03:39:28.174 [TestNG-tests-1] INFO  o.e.p.f.FlightConfirmationPage - Total price : $584 USD
+2025-03-20 03:39:28.174 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $584 USD
+2025-03-20 03:39:28.205 [TestNG-tests-4] INFO  o.e.p.f.FlightConfirmationPage - Total price : $2338 USD
+2025-03-20 03:39:28.205 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $2338 USD
+2025-03-20 03:39:28.353 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-20 03:39:28.384 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-20 03:39:28.442 [TestNG-tests-3] INFO  o.e.p.f.FlightConfirmationPage - Total price : $1753 USD
+2025-03-20 03:39:28.442 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $1753 USD
+2025-03-20 03:39:28.472 [TestNG-tests-2] INFO  o.e.p.f.FlightConfirmationPage - Total price : $1169 USD
+2025-03-20 03:39:28.472 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $1169 USD
+2025-03-20 03:40:34.091 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  F:\SQA\Flight Reservation\Structured Selenium Automation\src\test\resources\test-suites\flight-reservation.xml
+
+2025-03-20 03:40:34.110 [main] INFO  util.ResourceLoader - reading resource from location: src/test/resources/test-data/config/default.properties
+2025-03-20 03:40:34.111 [main] INFO  util.Config - Test Properties
+2025-03-20 03:40:34.112 [main] INFO  util.Config - -----------------
+2025-03-20 03:40:34.112 [main] INFO  util.Config - selenium.grid.urlFormat=http://%s:4444/wd/hub
+2025-03-20 03:40:34.112 [main] INFO  util.Config - browser=chrome
+2025-03-20 03:40:34.112 [main] INFO  util.Config - vendorPortal.url=https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html
+2025-03-20 03:40:34.112 [main] INFO  util.Config - selenium.grid.enabled=true
+2025-03-20 03:40:34.112 [main] INFO  util.Config - flightReservation.url=https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/reservation-app/index.html
+2025-03-20 03:40:34.112 [main] INFO  util.Config - selenium.grid.hubHost=localhost
+2025-03-20 03:40:34.112 [main] INFO  util.Config - -----------------
+2025-03-20 03:40:34.142 [TestNG-tests-2] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-20 03:40:34.142 [TestNG-tests-4] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-20 03:40:34.142 [TestNG-tests-1] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-20 03:40:34.142 [TestNG-tests-3] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-20 03:40:35.841 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-4.json
+2025-03-20 03:40:35.841 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-3.json
+2025-03-20 03:40:35.841 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-2.json
+2025-03-20 03:40:35.860 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-1.json
+2025-03-20 03:40:35.976 [TestNG-tests-4] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-4.json
+2025-03-20 03:40:35.976 [TestNG-tests-2] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-2.json
+2025-03-20 03:40:35.976 [TestNG-tests-1] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-1.json
+2025-03-20 03:40:35.976 [TestNG-tests-3] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-3.json
+2025-03-20 03:40:36.045 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-20 03:40:36.045 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-20 03:40:36.045 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-20 03:40:36.045 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-20 03:40:38.860 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-20 03:40:38.901 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-20 03:40:38.963 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-20 03:40:38.979 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-20 03:40:43.868 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-20 03:40:43.913 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-20 03:40:43.975 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-20 03:40:43.991 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-20 03:40:49.125 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 3 passengers
+2025-03-20 03:40:49.157 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 1 passengers
+2025-03-20 03:40:49.234 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 2 passengers
+2025-03-20 03:40:49.234 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 4 passengers
+2025-03-20 03:40:54.697 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-20 03:40:54.712 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-20 03:40:54.804 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-20 03:40:54.804 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-20 03:41:00.605 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-20 03:41:00.636 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-20 03:41:00.691 [TestNG-tests-1] INFO  o.e.p.f.FlightConfirmationPage - Total price : $584 USD
+2025-03-20 03:41:00.691 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $584 USD
+2025-03-20 03:41:00.698 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-20 03:41:00.698 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-20 03:41:00.720 [TestNG-tests-3] INFO  o.e.p.f.FlightConfirmationPage - Total price : $1753 USD
+2025-03-20 03:41:00.720 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $1753 USD
+2025-03-20 03:41:00.788 [TestNG-tests-4] INFO  o.e.p.f.FlightConfirmationPage - Total price : $2338 USD
+2025-03-20 03:41:00.788 [TestNG-tests-2] INFO  o.e.p.f.FlightConfirmationPage - Total price : $1169 USD
+2025-03-20 03:41:00.788 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $2338 USD
+2025-03-20 03:41:00.788 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $1169 USD
+2025-03-22 02:44:45.269 [main] INFO  util.ResourceLoader - reading resource from location: src/test/resources/test-data/config/default.properties
+2025-03-22 02:44:45.272 [main] INFO  util.Config - Test Properties
+2025-03-22 02:44:45.272 [main] INFO  util.Config - -----------------
+2025-03-22 02:44:45.272 [main] INFO  util.Config - selenium.grid.urlFormat=http://%s:4444/wd/hub
+2025-03-22 02:44:45.272 [main] INFO  util.Config - browser=chrome
+2025-03-22 02:44:45.273 [main] INFO  util.Config - vendorPortal.url=https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html
+2025-03-22 02:44:45.273 [main] INFO  util.Config - selenium.grid.enabled=true
+2025-03-22 02:44:45.273 [main] INFO  util.Config - flightReservation.url=https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/reservation-app/index.html
+2025-03-22 02:44:45.273 [main] INFO  util.Config - selenium.grid.hubHost=localhost
+2025-03-22 02:44:45.273 [main] INFO  util.Config - -----------------
+2025-03-22 02:44:45.291 [TestNG-tests-3] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-22 02:44:45.291 [TestNG-tests-2] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-22 02:44:45.291 [TestNG-tests-1] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-22 02:44:47.835 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Initializing test with data from: test-data/vendor-portal/john.json
+2025-03-22 02:44:47.835 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Initializing test with data from: test-data/vendor-portal/sam.json
+2025-03-22 02:44:47.835 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Initializing test with data from: test-data/vendor-portal/mike.json
+2025-03-22 02:44:47.993 [TestNG-tests-3] INFO  util.ResourceLoader - reading resource from location: test-data/vendor-portal/john.json
+2025-03-22 02:44:47.993 [TestNG-tests-2] INFO  util.ResourceLoader - reading resource from location: test-data/vendor-portal/mike.json
+2025-03-22 02:44:47.993 [TestNG-tests-1] INFO  util.ResourceLoader - reading resource from location: test-data/vendor-portal/sam.json
+2025-03-22 02:44:48.068 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Starting vendor login test
+2025-03-22 02:44:48.068 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Starting vendor login test
+2025-03-22 02:44:48.068 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Starting vendor login test
+2025-03-22 02:44:48.068 [TestNG-tests-3] INFO  o.e.pages.vendorsportal.LoginPage - Navigating to: https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html
+2025-03-22 02:44:48.068 [TestNG-tests-2] INFO  o.e.pages.vendorsportal.LoginPage - Navigating to: https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html
+2025-03-22 02:44:48.068 [TestNG-tests-1] INFO  o.e.pages.vendorsportal.LoginPage - Navigating to: https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html
+2025-03-22 02:44:48.957 [TestNG-tests-2] INFO  o.e.pages.vendorsportal.LoginPage - Attempting login for user: mike
+2025-03-22 02:44:48.957 [TestNG-tests-3] INFO  o.e.pages.vendorsportal.LoginPage - Attempting login for user: john
+2025-03-22 02:44:48.997 [TestNG-tests-1] INFO  o.e.pages.vendorsportal.LoginPage - Attempting login for user: sam
+2025-03-22 02:44:49.408 [TestNG-tests-2] INFO  o.e.pages.vendorsportal.LoginPage - Login attempt completed for user: mike
+2025-03-22 02:44:49.409 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Login test completed successfully
+2025-03-22 02:44:49.418 [TestNG-tests-3] INFO  o.e.pages.vendorsportal.LoginPage - Login attempt completed for user: john
+2025-03-22 02:44:49.418 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Login test completed successfully
+2025-03-22 02:44:49.459 [TestNG-tests-1] INFO  o.e.pages.vendorsportal.LoginPage - Login attempt completed for user: sam
+2025-03-22 02:44:49.459 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Login test completed successfully
+2025-03-22 02:44:54.431 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Starting dashboard verification test
+2025-03-22 02:44:54.431 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Starting dashboard verification test
+2025-03-22 02:44:54.473 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Starting dashboard verification test
+2025-03-22 02:44:54.506 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Verifying financial metrics
+2025-03-22 02:44:54.508 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Verifying financial metrics
+2025-03-22 02:44:54.552 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Verifying financial metrics
+2025-03-22 02:44:54.667 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Testing order history search with keyword: miami
+2025-03-22 02:44:54.667 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Testing order history search with keyword: 2024/01/01
+2025-03-22 02:44:54.667 [TestNG-tests-2] INFO  o.e.p.vendorsportal.DashboardPage - Searching order history with keyword: miami
+2025-03-22 02:44:54.667 [TestNG-tests-3] INFO  o.e.p.vendorsportal.DashboardPage - Searching order history with keyword: 2024/01/01
+2025-03-22 02:44:54.726 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Testing order history search with keyword: adams
+2025-03-22 02:44:54.726 [TestNG-tests-1] INFO  o.e.p.vendorsportal.DashboardPage - Searching order history with keyword: adams
+2025-03-22 02:44:54.863 [TestNG-tests-2] DEBUG o.e.p.vendorsportal.DashboardPage - Raw search results text: Showing 1 to 10 of 10 entries (filtered from 99 total entries)
+2025-03-22 02:44:54.863 [TestNG-tests-2] INFO  o.e.p.vendorsportal.DashboardPage - Search results count: 10
+2025-03-22 02:44:54.864 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Dashboard test completed successfully
+2025-03-22 02:44:54.877 [TestNG-tests-3] DEBUG o.e.p.vendorsportal.DashboardPage - Raw search results text: Showing 0 to 0 of 0 entries (filtered from 99 total entries)
+2025-03-22 02:44:54.878 [TestNG-tests-3] INFO  o.e.p.vendorsportal.DashboardPage - Search results count: 0
+2025-03-22 02:44:54.878 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Dashboard test completed successfully
+2025-03-22 02:44:54.913 [TestNG-tests-1] DEBUG o.e.p.vendorsportal.DashboardPage - Raw search results text: Showing 1 to 8 of 8 entries (filtered from 99 total entries)
+2025-03-22 02:44:54.914 [TestNG-tests-1] INFO  o.e.p.vendorsportal.DashboardPage - Search results count: 8
+2025-03-22 02:44:54.914 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Dashboard test completed successfully
+2025-03-22 02:44:59.872 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Starting logout test
+2025-03-22 02:44:59.872 [TestNG-tests-2] INFO  o.e.p.vendorsportal.DashboardPage - Initiating logout process
+2025-03-22 02:44:59.887 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Starting logout test
+2025-03-22 02:44:59.887 [TestNG-tests-3] INFO  o.e.p.vendorsportal.DashboardPage - Initiating logout process
+2025-03-22 02:44:59.919 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Starting logout test
+2025-03-22 02:44:59.919 [TestNG-tests-1] INFO  o.e.p.vendorsportal.DashboardPage - Initiating logout process
+2025-03-22 02:45:04.324 [TestNG-tests-2] INFO  o.e.p.vendorsportal.DashboardPage - Logout completed successfully
+2025-03-22 02:45:04.404 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Logout test completed successfully
+2025-03-22 02:45:12.520 [TestNG-tests-1] INFO  o.e.p.vendorsportal.DashboardPage - Logout completed successfully
+2025-03-22 02:45:12.592 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Logout test completed successfully
+2025-03-22 02:45:20.631 [TestNG-tests-3] INFO  o.e.p.vendorsportal.DashboardPage - Logout completed successfully
+2025-03-22 02:45:20.712 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Logout test completed successfully
+2025-03-22 02:45:25.811 [main] INFO  util.ResourceLoader - reading resource from location: src/test/resources/test-data/config/default.properties
+2025-03-22 02:45:25.813 [main] INFO  util.Config - Test Properties
+2025-03-22 02:45:25.813 [main] INFO  util.Config - -----------------
+2025-03-22 02:45:25.813 [main] INFO  util.Config - selenium.grid.urlFormat=http://%s:4444/wd/hub
+2025-03-22 02:45:25.813 [main] INFO  util.Config - browser=chrome
+2025-03-22 02:45:25.813 [main] INFO  util.Config - vendorPortal.url=https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html
+2025-03-22 02:45:25.813 [main] INFO  util.Config - selenium.grid.enabled=true
+2025-03-22 02:45:25.813 [main] INFO  util.Config - flightReservation.url=https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/reservation-app/index.html
+2025-03-22 02:45:25.813 [main] INFO  util.Config - selenium.grid.hubHost=localhost
+2025-03-22 02:45:25.813 [main] INFO  util.Config - -----------------
+2025-03-22 02:45:25.814 [TestNG-tests-1] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-22 02:45:25.814 [TestNG-tests-3] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-22 02:45:25.814 [TestNG-tests-2] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-22 02:45:25.814 [TestNG-tests-4] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-22 02:45:26.482 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-4.json
+2025-03-22 02:45:26.484 [TestNG-tests-4] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-4.json
+2025-03-22 02:45:26.504 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-1.json
+2025-03-22 02:45:26.504 [TestNG-tests-1] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-1.json
+2025-03-22 02:45:26.506 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-22 02:45:26.506 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-3.json
+2025-03-22 02:45:26.507 [TestNG-tests-3] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-3.json
+2025-03-22 02:45:26.520 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-22 02:45:26.520 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-22 02:45:26.537 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-2.json
+2025-03-22 02:45:26.538 [TestNG-tests-2] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-2.json
+2025-03-22 02:45:26.558 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-22 02:45:30.024 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-22 02:45:30.060 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-22 02:45:30.311 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-22 02:45:30.322 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-22 02:45:35.031 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-22 02:45:35.063 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-22 02:45:35.327 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-22 02:45:35.327 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-22 02:45:40.215 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 1 passengers
+2025-03-22 02:45:40.262 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 4 passengers
+2025-03-22 02:45:40.524 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 2 passengers
+2025-03-22 02:45:40.524 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 3 passengers
+2025-03-22 02:45:45.637 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-22 02:45:45.729 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-22 02:45:45.961 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-22 02:45:45.976 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-22 02:45:51.438 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-22 02:45:51.521 [TestNG-tests-1] INFO  o.e.p.f.FlightConfirmationPage - Total price : $584 USD
+2025-03-22 02:45:51.521 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $584 USD
+2025-03-22 02:45:51.530 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-22 02:45:51.613 [TestNG-tests-4] INFO  o.e.p.f.FlightConfirmationPage - Total price : $2338 USD
+2025-03-22 02:45:51.614 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $2338 USD
+2025-03-22 02:45:51.764 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-22 02:45:51.779 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-22 02:45:51.851 [TestNG-tests-3] INFO  o.e.p.f.FlightConfirmationPage - Total price : $1753 USD
+2025-03-22 02:45:51.851 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $1753 USD
+2025-03-22 02:45:51.868 [TestNG-tests-2] INFO  o.e.p.f.FlightConfirmationPage - Total price : $1169 USD
+2025-03-22 02:45:51.868 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $1169 USD
+2025-03-22 02:55:50.241 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  F:\SQA\Flight Reservation\Structured Selenium Automation\src\test\resources\test-suites\flight-reservation.xml
+
+2025-03-22 02:55:50.272 [main] INFO  util.ResourceLoader - reading resource from location: ./test-data/config/default.properties
+2025-03-22 02:55:50.274 [main] INFO  util.Config - Test Properties
+2025-03-22 02:55:50.274 [main] INFO  util.Config - -----------------
+2025-03-22 02:55:50.274 [main] INFO  util.Config - selenium.grid.urlFormat=http://%s:4444/wd/hub
+2025-03-22 02:55:50.274 [main] INFO  util.Config - browser=chrome
+2025-03-22 02:55:50.274 [main] INFO  util.Config - vendorPortal.url=https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html
+2025-03-22 02:55:50.274 [main] INFO  util.Config - selenium.grid.enabled=true
+2025-03-22 02:55:50.274 [main] INFO  util.Config - flightReservation.url=https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/reservation-app/index.html
+2025-03-22 02:55:50.274 [main] INFO  util.Config - selenium.grid.hubHost=localhost
+2025-03-22 02:55:50.274 [main] INFO  util.Config - -----------------
+2025-03-22 02:55:50.297 [TestNG-tests-4] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-22 02:55:50.297 [TestNG-tests-2] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-22 02:55:50.297 [TestNG-tests-3] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-22 02:55:50.297 [TestNG-tests-1] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-22 02:55:52.644 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-4.json
+2025-03-22 02:55:52.644 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-2.json
+2025-03-22 02:55:52.644 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-1.json
+2025-03-22 02:55:52.645 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-3.json
+2025-03-22 02:55:52.826 [TestNG-tests-2] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-2.json
+2025-03-22 02:55:52.826 [TestNG-tests-4] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-4.json
+2025-03-22 02:55:52.826 [TestNG-tests-1] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-1.json
+2025-03-22 02:55:52.826 [TestNG-tests-3] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-3.json
+2025-03-22 02:55:52.897 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-22 02:55:52.897 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-22 02:55:52.897 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-22 02:55:52.897 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-22 02:55:55.746 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-22 02:55:55.842 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-22 02:55:55.889 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-22 02:55:56.003 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-22 02:56:00.762 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-22 02:56:00.852 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-22 02:56:00.897 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-22 02:56:01.005 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-22 02:56:05.957 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 4 passengers
+2025-03-22 02:56:06.064 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 1 passengers
+2025-03-22 02:56:06.109 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 2 passengers
+2025-03-22 02:56:06.201 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 3 passengers
+2025-03-22 02:56:11.434 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-22 02:56:11.527 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-22 02:56:11.603 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-22 02:56:11.663 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-22 02:56:17.275 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-22 02:56:17.367 [TestNG-tests-4] INFO  o.e.p.f.FlightConfirmationPage - Total price : $2338 USD
+2025-03-22 02:56:17.367 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $2338 USD
+2025-03-22 02:56:17.383 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-22 02:56:17.446 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-22 02:56:17.477 [TestNG-tests-1] INFO  o.e.p.f.FlightConfirmationPage - Total price : $584 USD
+2025-03-22 02:56:17.477 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $584 USD
+2025-03-22 02:56:17.523 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-22 02:56:17.545 [TestNG-tests-2] INFO  o.e.p.f.FlightConfirmationPage - Total price : $1169 USD
+2025-03-22 02:56:17.545 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $1169 USD
+2025-03-22 02:56:17.621 [TestNG-tests-3] INFO  o.e.p.f.FlightConfirmationPage - Total price : $1753 USD
+2025-03-22 02:56:17.621 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $1753 USD
+2025-03-22 03:10:02.251 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  F:\SQA\Flight Reservation\Structured Selenium Automation\src\test\resources\test-suites\flight-reservation.xml
+
+2025-03-22 03:10:02.270 [main] INFO  util.ResourceLoader - reading resource from location: ./test-data/config/default.properties
+2025-03-22 03:10:02.272 [main] INFO  util.Config - Test Properties
+2025-03-22 03:10:02.272 [main] INFO  util.Config - -----------------
+2025-03-22 03:10:02.272 [main] INFO  util.Config - selenium.grid.urlFormat=http://%s:4444/wd/hub
+2025-03-22 03:10:02.273 [main] INFO  util.Config - browser=chrome
+2025-03-22 03:10:02.273 [main] INFO  util.Config - vendorPortal.url=https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html
+2025-03-22 03:10:02.273 [main] INFO  util.Config - selenium.grid.enabled=true
+2025-03-22 03:10:02.273 [main] INFO  util.Config - flightReservation.url=https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/reservation-app/index.html
+2025-03-22 03:10:02.273 [main] INFO  util.Config - selenium.grid.hubHost=localhost
+2025-03-22 03:10:02.273 [main] INFO  util.Config - -----------------
+2025-03-22 03:10:02.290 [TestNG-tests-1] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-22 03:10:02.290 [TestNG-tests-2] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-22 03:10:02.290 [TestNG-tests-4] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-22 03:10:02.290 [TestNG-tests-3] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-22 03:10:04.631 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-2.json
+2025-03-22 03:10:04.631 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-4.json
+2025-03-22 03:10:04.631 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-3.json
+2025-03-22 03:10:04.632 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Loading test data from: test-data/flight-reservation/passenger-1.json
+2025-03-22 03:10:04.809 [TestNG-tests-4] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-4.json
+2025-03-22 03:10:04.809 [TestNG-tests-3] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-3.json
+2025-03-22 03:10:04.809 [TestNG-tests-1] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-1.json
+2025-03-22 03:10:04.809 [TestNG-tests-2] INFO  util.ResourceLoader - reading resource from location: test-data/flight-reservation/passenger-2.json
+2025-03-22 03:10:04.881 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-22 03:10:04.881 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-22 03:10:04.881 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-22 03:10:04.881 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Starting user registration test
+2025-03-22 03:10:07.255 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-22 03:10:07.255 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-22 03:10:07.257 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-22 03:10:07.463 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - User registration completed successfully
+2025-03-22 03:10:12.269 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-22 03:10:12.269 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-22 03:10:12.269 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-22 03:10:12.467 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Verifying registration confirmation
+2025-03-22 03:10:17.462 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 4 passengers
+2025-03-22 03:10:17.462 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 2 passengers
+2025-03-22 03:10:17.478 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 3 passengers
+2025-03-22 03:10:17.650 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Performing flight search with 1 passengers
+2025-03-22 03:10:22.953 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-22 03:10:22.953 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-22 03:10:22.984 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-22 03:10:23.106 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Selecting and confirming flights
+2025-03-22 03:10:28.836 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-22 03:10:28.851 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-22 03:10:28.882 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-22 03:10:28.923 [TestNG-tests-2] INFO  o.e.p.f.FlightConfirmationPage - Total price : $1169 USD
+2025-03-22 03:10:28.923 [TestNG-tests-2] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $1169 USD
+2025-03-22 03:10:28.941 [TestNG-tests-4] INFO  o.e.p.f.FlightConfirmationPage - Total price : $2338 USD
+2025-03-22 03:10:28.941 [TestNG-tests-4] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $2338 USD
+2025-03-22 03:10:28.959 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Verifying flight reservation confirmation
+2025-03-22 03:10:28.966 [TestNG-tests-3] INFO  o.e.p.f.FlightConfirmationPage - Total price : $1753 USD
+2025-03-22 03:10:28.966 [TestNG-tests-3] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $1753 USD
+2025-03-22 03:10:29.048 [TestNG-tests-1] INFO  o.e.p.f.FlightConfirmationPage - Total price : $584 USD
+2025-03-22 03:10:29.049 [TestNG-tests-1] INFO  o.e.t.f.FlightReservationTest - Flight reservation completed successfully with price: $584 USD
+2025-03-22 03:11:19.992 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  F:\SQA\Flight Reservation\Structured Selenium Automation\src\test\resources\test-suites\vendor-portal.xml
+
+2025-03-22 03:11:20.011 [main] INFO  util.ResourceLoader - reading resource from location: ./test-data/config/default.properties
+2025-03-22 03:11:20.013 [main] INFO  util.Config - Test Properties
+2025-03-22 03:11:20.013 [main] INFO  util.Config - -----------------
+2025-03-22 03:11:20.013 [main] INFO  util.Config - selenium.grid.urlFormat=http://%s:4444/wd/hub
+2025-03-22 03:11:20.013 [main] INFO  util.Config - browser=chrome
+2025-03-22 03:11:20.013 [main] INFO  util.Config - vendorPortal.url=https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html
+2025-03-22 03:11:20.013 [main] INFO  util.Config - selenium.grid.enabled=true
+2025-03-22 03:11:20.013 [main] INFO  util.Config - flightReservation.url=https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/reservation-app/index.html
+2025-03-22 03:11:20.013 [main] INFO  util.Config - selenium.grid.hubHost=localhost
+2025-03-22 03:11:20.013 [main] INFO  util.Config - -----------------
+2025-03-22 03:11:20.046 [TestNG-tests-1] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-22 03:11:20.046 [TestNG-tests-3] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-22 03:11:20.046 [TestNG-tests-2] INFO  org.example.tests.AbstractTest - grid url: http://localhost:4444/wd/hub
+2025-03-22 03:11:22.267 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Initializing test with data from: test-data/vendor-portal/john.json
+2025-03-22 03:11:22.267 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Initializing test with data from: test-data/vendor-portal/sam.json
+2025-03-22 03:11:22.268 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Initializing test with data from: test-data/vendor-portal/mike.json
+2025-03-22 03:11:22.400 [TestNG-tests-1] INFO  util.ResourceLoader - reading resource from location: test-data/vendor-portal/sam.json
+2025-03-22 03:11:22.400 [TestNG-tests-3] INFO  util.ResourceLoader - reading resource from location: test-data/vendor-portal/john.json
+2025-03-22 03:11:22.400 [TestNG-tests-2] INFO  util.ResourceLoader - reading resource from location: test-data/vendor-portal/mike.json
+2025-03-22 03:11:22.466 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Starting vendor login test
+2025-03-22 03:11:22.466 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Starting vendor login test
+2025-03-22 03:11:22.466 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Starting vendor login test
+2025-03-22 03:11:22.466 [TestNG-tests-1] INFO  o.e.pages.vendorsportal.LoginPage - Navigating to: https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html
+2025-03-22 03:11:22.466 [TestNG-tests-2] INFO  o.e.pages.vendorsportal.LoginPage - Navigating to: https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html
+2025-03-22 03:11:22.466 [TestNG-tests-3] INFO  o.e.pages.vendorsportal.LoginPage - Navigating to: https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html
+2025-03-22 03:11:23.241 [TestNG-tests-1] INFO  o.e.pages.vendorsportal.LoginPage - Attempting login for user: sam
+2025-03-22 03:11:23.284 [TestNG-tests-3] INFO  o.e.pages.vendorsportal.LoginPage - Attempting login for user: john
+2025-03-22 03:11:23.387 [TestNG-tests-2] INFO  o.e.pages.vendorsportal.LoginPage - Attempting login for user: mike
+2025-03-22 03:11:23.658 [TestNG-tests-1] INFO  o.e.pages.vendorsportal.LoginPage - Login attempt completed for user: sam
+2025-03-22 03:11:23.658 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Login test completed successfully
+2025-03-22 03:11:23.705 [TestNG-tests-3] INFO  o.e.pages.vendorsportal.LoginPage - Login attempt completed for user: john
+2025-03-22 03:11:23.705 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Login test completed successfully
+2025-03-22 03:11:23.780 [TestNG-tests-2] INFO  o.e.pages.vendorsportal.LoginPage - Login attempt completed for user: mike
+2025-03-22 03:11:23.780 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Login test completed successfully
+2025-03-22 03:11:28.675 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Starting dashboard verification test
+2025-03-22 03:11:28.719 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Starting dashboard verification test
+2025-03-22 03:11:28.731 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Verifying financial metrics
+2025-03-22 03:11:28.774 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Verifying financial metrics
+2025-03-22 03:11:28.796 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Starting dashboard verification test
+2025-03-22 03:11:28.850 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Testing order history search with keyword: adams
+2025-03-22 03:11:28.850 [TestNG-tests-1] INFO  o.e.p.vendorsportal.DashboardPage - Searching order history with keyword: adams
+2025-03-22 03:11:28.852 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Verifying financial metrics
+2025-03-22 03:11:28.898 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Testing order history search with keyword: 2024/01/01
+2025-03-22 03:11:28.898 [TestNG-tests-3] INFO  o.e.p.vendorsportal.DashboardPage - Searching order history with keyword: 2024/01/01
+2025-03-22 03:11:28.975 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Testing order history search with keyword: miami
+2025-03-22 03:11:28.976 [TestNG-tests-2] INFO  o.e.p.vendorsportal.DashboardPage - Searching order history with keyword: miami
+2025-03-22 03:11:29.022 [TestNG-tests-1] DEBUG o.e.p.vendorsportal.DashboardPage - Raw search results text: Showing 1 to 8 of 8 entries (filtered from 99 total entries)
+2025-03-22 03:11:29.023 [TestNG-tests-1] INFO  o.e.p.vendorsportal.DashboardPage - Search results count: 8
+2025-03-22 03:11:29.023 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Dashboard test completed successfully
+2025-03-22 03:11:29.079 [TestNG-tests-3] DEBUG o.e.p.vendorsportal.DashboardPage - Raw search results text: Showing 0 to 0 of 0 entries (filtered from 99 total entries)
+2025-03-22 03:11:29.079 [TestNG-tests-3] INFO  o.e.p.vendorsportal.DashboardPage - Search results count: 0
+2025-03-22 03:11:29.079 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Dashboard test completed successfully
+2025-03-22 03:11:29.137 [TestNG-tests-2] DEBUG o.e.p.vendorsportal.DashboardPage - Raw search results text: Showing 1 to 10 of 10 entries (filtered from 99 total entries)
+2025-03-22 03:11:29.137 [TestNG-tests-2] INFO  o.e.p.vendorsportal.DashboardPage - Search results count: 10
+2025-03-22 03:11:29.137 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Dashboard test completed successfully
+2025-03-22 03:11:34.035 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Starting logout test
+2025-03-22 03:11:34.035 [TestNG-tests-1] INFO  o.e.p.vendorsportal.DashboardPage - Initiating logout process
+2025-03-22 03:11:34.081 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Starting logout test
+2025-03-22 03:11:34.081 [TestNG-tests-3] INFO  o.e.p.vendorsportal.DashboardPage - Initiating logout process
+2025-03-22 03:11:34.142 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Starting logout test
+2025-03-22 03:11:34.142 [TestNG-tests-2] INFO  o.e.p.vendorsportal.DashboardPage - Initiating logout process
+2025-03-22 03:11:38.605 [TestNG-tests-2] INFO  o.e.p.vendorsportal.DashboardPage - Logout completed successfully
+2025-03-22 03:11:38.688 [TestNG-tests-2] INFO  o.e.t.vendorportal.VendorPortalTest - Logout test completed successfully
+2025-03-22 03:11:46.648 [TestNG-tests-1] INFO  o.e.p.vendorsportal.DashboardPage - Logout completed successfully
+2025-03-22 03:11:46.723 [TestNG-tests-1] INFO  o.e.t.vendorportal.VendorPortalTest - Logout test completed successfully
+2025-03-22 03:11:54.765 [TestNG-tests-3] INFO  o.e.p.vendorsportal.DashboardPage - Logout completed successfully
+2025-03-22 03:11:54.824 [TestNG-tests-3] INFO  o.e.t.vendorportal.VendorPortalTest - Logout test completed successfully
