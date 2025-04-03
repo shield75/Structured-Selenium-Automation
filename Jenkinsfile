@@ -21,7 +21,7 @@ pipeline{
 				DOCKER_HUB = credentials('dockerhub-creds')
             }
             steps{
-				bat 'docker login -u %DOCKER_HUB_USR% -p %DOCKER_HUB_PSW%'
+				bat 'docker login -u "%DOCKER_HUB_USR%" -p "%DOCKER_HUB_PSW%"'
                 bat 'docker push tonu75/selenium-docker:latest'
                 bat "docker tag tonu75/selenium-docker:latest tonu75/selenium-docker:${env.BUILD_NUMBER}"
                 bat "docker push tonu75/selenium-docker:${env.BUILD_NUMBER}"
