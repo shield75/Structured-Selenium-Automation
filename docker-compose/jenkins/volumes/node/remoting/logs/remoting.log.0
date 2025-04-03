@@ -1,0 +1,10 @@
+Apr 03, 2025 9:42:19 PM hudson.remoting.Launcher createEngine
+INFO: Setting up agent: tonu's-pc
+Apr 03, 2025 9:42:19 PM hudson.remoting.Engine startEngine
+INFO: Using Remoting version: 3283.v92c105e0f819
+Apr 03, 2025 9:42:19 PM org.jenkinsci.remoting.engine.WorkDirManager initializeWorkDir
+INFO: Using F:\SQA\Flight Reservation\Structured Selenium Automation\docker-compose\jenkins\volumes\node\remoting as a remoting work directory
+Apr 03, 2025 9:42:19 PM hudson.remoting.Launcher$CuiListener status
+INFO: WebSocket connection open
+Apr 03, 2025 9:42:19 PM hudson.remoting.Launcher$CuiListener status
+INFO: Connected
