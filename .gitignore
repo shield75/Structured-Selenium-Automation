@@ -37,4 +37,5 @@ build/
 ### Mac OS ###
 .DS_Store
 
-.docker-compose/jenkins/volumes
+
+/docker-compose/jenkins/volumes/
