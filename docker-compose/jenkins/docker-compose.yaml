@@ -7,3 +7,5 @@ services:
       - 50000:50000
     volumes:
       - ./volumes/master:/var/jenkins_home
+    environment:
+      - JAVA_OPTS="-Dhudson.model.DirectoryBrowserSupport.CSP="
