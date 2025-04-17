@@ -19,35 +19,81 @@ Structured Selenium Automation is a robust test automation framework using Selen
 
 ## 🛠️ Tech Stack
 
-| Tool           | Version        |
-|----------------|----------------|
-| Java           | 11+            |
-| Selenium       | 4.x            |
-| TestNG         | 7.x            |
-| Maven          | 3.x            |
-| Docker         | Latest         |
-| Jenkins        | Pipeline       |
+| Tool              | Version        |
+|-------------------|----------------|
+| Java              | 21             |
+| Selenium          | 4.28.1         |
+| TestNG           | 7.11.0         |
+| Maven            | 3.13.0         |
+| Docker           | Latest         |
+| Jenkins          | Pipeline       |
+| Logback          | 1.5.16         |
+| WebDriverManager | 5.9.3          |
+| Jackson          | 2.18.2         |
 | Extent Reports | 5.x (Optional) |
 
 ---
 
 ## 📁 Project Structure
 
-```bash
+```plaintext
 Structured-Selenium-Automation/
-├── docker-compose/           # Docker setup for Selenium Grid
-├── logs/                     # Log files
-├── result/                   # Test results & reports
 ├── src/
-│   ├── main/java/com/automation/
-│   │   ├── base/             # Base classes (BaseTest, BasePage)
-│   │   ├── pages/            # Page classes for application screens
-│   │   └── utils/            # Utility helpers (DriverFactory, Logger, etc.)
-│   └── test/java/com/automation/tests/  # Test classes
-├── Dockerfile                # Base Docker image setup
-├── Jenkinsfile               # Jenkins pipeline config
-├── pom.xml                   # Maven project file
-└── runner.sh                 # Shell script for CLI test execution
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── org/
+│   │   │       └── example/
+│   │   │           └── pages/
+│   │   │               ├── AbstractPage.java
+│   │   │               ├── flightreservation/
+│   │   │               │   ├── FlightConfirmationPage.java
+│   │   │               │   ├── FlightSearchPage.java
+│   │   │               │   ├── FlightSelectionPage.java
+│   │   │               │   ├── RegistrationConfirmationPage.java
+│   │   │               │   └── RegistrationPage.java
+│   │   │               └── vendorsportal/
+│   │   │                   ├── DashboardPage.java
+│   │   │                   └── LoginPage.java
+│   │   └── resources/
+│   │       └── logback.xml
+│   └── test/
+│       ├── java/
+│       │   ├── listener/
+│       │   │   └── TestListener.java
+│       │   ├── util/
+│       │   │   ├── Config.java
+│       │   │   ├── Constants.java
+│       │   │   ├── JsonUtil.java
+│       │   │   └── ResourceLoader.java
+│       │   └── org/example/tests/
+│       │       ├── AbstractTest.java
+│       │       ├── flightreservation/
+│       │       │   ├── FlightReservationTest.java
+│       │       │   └── model/
+│       │       │       └── FlightReservationTestData.java
+│       │       └── vendorportal/
+│       │           ├── VendorPortalTest.java
+│       │           └── model/
+│       │               └── VendorPortalTestData.java
+│       └── resources/
+│           ├── test-data/
+│           │   ├── config/
+│           │   │   └── default.properties
+│           │   ├── flight-reservation/
+│           │   │   └── passenger-*.json
+│           │   └── vendor-portal/
+│           │       └── *.json
+│           └── test-suites/
+│               ├── flight-reservation.xml
+│               └── vendor-portal.xml
+├── docker-compose/
+│   ├── grid-test-suite/
+│   ├── jenkins/
+│   └── scale-browser/
+├── Dockerfile
+├── Jenkinsfile
+├── pom.xml
+└── runner.sh
 ```
 
 ---
