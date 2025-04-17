@@ -174,13 +174,10 @@ After test execution:
 ---
 
 ## 🔐 License
-
-This project is licensed under the MIT License.
-
-© 2025 QA Automation Team @ Shield75. All rights reserved.
+© 2025 QA Automation @ Shield75. All rights reserved.
 
 ---
 
 ## 📬 Contact
 
-For questions or support, reach out at [youremail@example.com].
+For questions or support, reach out at [anisurcap75@gmail.com].
