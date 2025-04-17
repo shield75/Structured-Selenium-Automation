@@ -157,7 +157,7 @@ After test execution:
 
 ### 🖼️ Sample Report Screenshot
 
-[!Report Sample](https://github.com/shield75/Structured-Selenium-Automation/blob/main/assets/testNG-report.png)
+[!https://github.com/shield75/Structured-Selenium-Automation/blob/main/assets/testNG-report.png]
 
 > *Replace the above URL with a real image link or upload directly in GitHub.*
 
