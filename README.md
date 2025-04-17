@@ -160,8 +160,6 @@ After test execution:
 
 ![Report Sample](assets/testNG-report.png)
 
-> *Replace the above URL with a real image link or upload directly in GitHub.*
-
 ---
 
 ## 🧑‍💻 Contribution
