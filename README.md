@@ -1,6 +1,7 @@
 # Structured Selenium Automation
 
 ## 🧾 Overview
+![Overview](assets/selenium-docker-jenkins.png)
 
 Structured Selenium Automation is a robust test automation framework using Selenium WebDriver, TestNG, and Java, built for scalable and maintainable web UI testing. It follows the Page Object Model (POM), integrates with Docker and Jenkins for CI/CD, and generates rich reports to visualize test results.
 
