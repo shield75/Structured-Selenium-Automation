@@ -157,7 +157,7 @@ After test execution:
 
 ### 🖼️ Sample Report Screenshot
 
-![Allure Report Sample](https://github.com/shield75/Structured-Selenium-Automation/assets/your-screenshot.png)
+!Report Sample](https://github.com/shield75/Structured-Selenium-Automation/assets/testNG-report.png)
 
 > *Replace the above URL with a real image link or upload directly in GitHub.*
 
